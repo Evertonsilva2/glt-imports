@@ -2,7 +2,7 @@
   if (!Array.isArray(window.PRODUTOS)) return;
 
   // Correções pontuais solicitadas no catálogo.
-  window.PRODUTOS = window.PRODUTOS.filter(produto => !['Camisa Athletico Paranaense Athlético Paranaense', 'Atlético Mineiro', 'S.C Internacional', 'Chapecoense', 'Coritiba', 'Cruzeiro', 'Fluminense', 'Palmeiras', 'Remo', 'Vasco da Gama', 'Vitória'].includes(produto.nome));
+  window.PRODUTOS = window.PRODUTOS.filter(produto => !['Camisa Athletico Paranaense Athlético Paranaense', 'Atlético Mineiro', 'S.C Internacional', 'Chapecoense', 'Coritiba', 'Cruzeiro', 'Fluminense', 'Palmeiras', 'Remo', 'Vasco da Gama', 'Vitória', 'RB Bragantino'].includes(produto.nome));
   const morelia = window.PRODUTOS.filter(produto => /morelia\s*neo\s*v\s*beta/i.test(produto.nome));
   morelia.forEach(produto => {
     produto.nome = produto.nome.replace(/\s*Made\s*In\s*Japan\s*/i, ' ').replace(/\s+/g, ' ').trim();
@@ -14,6 +14,7 @@
     if (/22\/23 Venezia Titular/i.test(produto.nome)) produto.marca = 'Kappa';
     if (/Lyon|Curaçao/i.test(produto.nome)) produto.marca = 'Adidas';
     if (/RB Bragantino.*2025\/26.*Visitante/i.test(produto.nome)) produto.marca = 'Puma';
+    if (/RB Bragantino.*(?:2026\/27|2025\/26).*Titular/i.test(produto.nome)) produto.marca = 'Puma';
     if (/Regata Fluminense Goalkeeper Trainning Yellow|Feminina 2026\/27 Fluminense Titular/i.test(produto.nome)) produto.marca = 'Puma';
     if (/Fluminense/i.test(produto.nome)) produto.marca = 'Puma';
     if (/2026\/27 Vasco da Gama Green|2026\/27 Vasco da Gama Edição Especial Yellow/i.test(produto.nome)) produto.marca = 'Adidas';
