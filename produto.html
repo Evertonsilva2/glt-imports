@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Produto | GLT IMPORTS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <main>
+    <div class="container product-detail" id="productDetail"></div>
+    <section class="section container">
+      <div class="section-title"><div><span class="kicker">SELEÇÃO RELACIONADA</span><h2>PRODUTOS RELACIONADOS</h2></div></div>
+      <div class="product-grid" id="relatedGrid"></div>
+    </section>
+  </main>
+  <div id="siteFooter"></div>
+  <script src="js/produtos.js"></script>
+  <script src="js/produtos-importados.js"></script>
+  <script src="js/produtos-europa.js"></script>
+  <script src="js/produtos-selecoes.js"></script>
+  <script src="js/produtos-selecoes-ausentes.js"></script>
+  <script src="js/produtos-calcados.js"></script>
+  <script src="js/produtos-chuteiras-extra.js"></script>
+  <script src="js/marcas.js"></script>
+  <script src="js/precos.js"></script>
+  <script src="js/deploy-light.js"></script>
+  <script src="js/galerias-flamengo.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const id = +(new URLSearchParams(location.search).get('id') || 1);
+      const p = PRODUTOS.find(item => item.id === id) || PRODUTOS[0];
+      const galeria = p.galeria?.length ? p.galeria : [p.img];
+      document.title = `${p.nome} | GLT IMPORTS`;
+
+      productDetail.innerHTML = `
+        <div>
+          <div class="main-image"><img id="mainProductImage" src="${galeria[0]}" alt="${p.nome}"></div>
+          <div class="thumbs">${galeria.map((imagem, indice) => `<img class="${indice ? '' : 'active'}" src="${imagem}" data-gallery-src="${imagem}" alt="${p.nome} — foto ${indice + 1}" loading="lazy">`).join('')}</div>
+        </div>
+        <div class="detail-copy">
+          <span class="kicker">${p.marca} / ${p.categoria}</span>
+          <h1>${p.nome}</h1>
+          <span class="product-meta">${p.tipo} • DISPONIBILIDADE SOB CONSULTA</span>
+          <div class="detail-price">${GLT.money(p.preco)}</div>
+          <p>${p.descricao}</p>
+          <div class="choice"><strong>TAMANHOS</strong><div class="options">${p.tamanhos.map((tamanho, indice) => `<button class="${indice ? '' : 'selected'}">${tamanho}</button>`).join('')}</div></div>
+          <div class="choice"><strong>CORES</strong><div class="options">${p.cores.map((cor, indice) => `<button class="${indice ? '' : 'selected'}">${cor}</button>`).join('')}</div></div>
+          <button class="btn consult" data-consult="${p.id}">CONSULTAR PRODUTO</button>
+          <button class="btn ghost consult" data-fav="${p.id}">♡ SALVAR NOS FAVORITOS</button>
+          <div class="features">${p.caracteristicas.map(item => `— ${item}<br>`).join('')}</div>
+        </div>`;
+
+      productDetail.addEventListener('click', event => {
+        const miniatura = event.target.closest('[data-gallery-src]');
+        if (miniatura) {
+          mainProductImage.src = miniatura.dataset.gallerySrc;
+          productDetail.querySelectorAll('.thumbs img').forEach(img => img.classList.remove('active'));
+          miniatura.classList.add('active');
+        }
+        if (event.target.closest('.options button')) {
+          const box = event.target.closest('.options');
+          box.querySelectorAll('button').forEach(button => button.classList.remove('selected'));
+          event.target.classList.add('selected');
+        }
+      });
+
+      relatedGrid.innerHTML = PRODUTOS.filter(item => item.categoria === p.categoria && item.id !== p.id).slice(0, 4).map(GLT.card).join('');
+    });
+  </script>
+</body>
+</html>

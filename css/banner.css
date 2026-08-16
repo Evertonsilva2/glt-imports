@@ -1,0 +1,6 @@
+.game-main {
+  width: 100%;
+  object-fit: contain;
+  background: #050505;
+  filter: none;
+}
