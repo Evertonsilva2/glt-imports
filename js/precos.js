@@ -2,7 +2,7 @@
   if (!Array.isArray(window.PRODUTOS)) return;
 
   // Correções pontuais solicitadas no catálogo.
-  window.PRODUTOS = window.PRODUTOS.filter(produto => produto.nome !== 'Camisa Athletico Paranaense Athlético Paranaense' && produto.nome !== 'Atlético Mineiro');
+  window.PRODUTOS = window.PRODUTOS.filter(produto => !['Camisa Athletico Paranaense Athlético Paranaense', 'Atlético Mineiro', 'S.C Internacional'].includes(produto.nome));
   const morelia = window.PRODUTOS.filter(produto => /morelia\s*neo\s*v\s*beta/i.test(produto.nome));
   morelia.forEach(produto => {
     produto.nome = produto.nome.replace(/\s*Made\s*In\s*Japan\s*/i, ' ').replace(/\s+/g, ' ').trim();
