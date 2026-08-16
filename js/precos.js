@@ -14,6 +14,11 @@
       return;
     }
 
+    if (produto.categoria === 'Luxo') {
+      produto.preco = 149.99;
+      return;
+    }
+
     if (produto.categoria !== 'Camisas') return;
 
     const identificacao = [produto.nome, produto.tipo, produto.descricao]
