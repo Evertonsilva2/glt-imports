@@ -1,9 +1,28 @@
 (function aplicarPrecosGLT() {
   if (!Array.isArray(window.PRODUTOS)) return;
 
+  // Correções pontuais solicitadas no catálogo.
+  window.PRODUTOS = window.PRODUTOS.filter(produto => produto.nome !== 'Camisa Athletico Paranaense Athlético Paranaense' && produto.nome !== 'Atlético Mineiro');
+  const morelia = window.PRODUTOS.filter(produto => /morelia\s*neo\s*v\s*beta/i.test(produto.nome));
+  morelia.forEach(produto => {
+    produto.nome = produto.nome.replace(/\s*Made\s*In\s*Japan\s*/i, ' ').replace(/\s+/g, ' ').trim();
+  });
+  window.PRODUTOS.forEach(produto => {
+    if (/Retr[oô]\s+Lazio\s+98\/00\s+3rd/i.test(produto.nome)) produto.marca = 'Puma';
+    if (/Retr[oô]\s+1994\/96\s+Atl[eé]tico\s+Mineiro/i.test(produto.nome)) produto.marca = 'Umbro';
+    if (/Atl[eé]tico de Madrid Retr[oô]\s+1994\/95/i.test(produto.nome)) produto.marca = 'Puma';
+    if (/22\/23 Venezia Titular/i.test(produto.nome)) produto.marca = 'Kappa';
+    if (/Lyon|Curaçao/i.test(produto.nome)) produto.marca = 'Adidas';
+    if (/Mizuno\s+Alpha\s+III\s+Made\s+In\s+Japan/i.test(produto.nome)) {
+      produto.nome = produto.nome.replace(/\s*Made\s*In\s*Japan\s*/i, ' ').replace(/\s+/g, ' ').trim();
+    }
+  });
+
   const versaoPremium = /retr[oô]|vers[aã]o\s+(?:do\s+)?jogador|players?[\s-]+(?:version|edition)/i;
 
   PRODUTOS.forEach(produto => {
+    if (produto.nome === 'Camisa Flamengo Centenário Retrô 1994') produto.marca = 'Umbro';
+    if (/Mizuno\s+(?:Alpha\s+III|Morelia\s+Neo\s+V\s+Beta)/i.test(produto.nome)) produto.preco = 599.99;
     if (produto.categoria === 'Chuteiras') {
       produto.preco = 549.99;
       return;
