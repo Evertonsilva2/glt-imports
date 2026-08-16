@@ -44,13 +44,14 @@
         <div class="detail-copy">
           <span class="kicker">${p.marca} / ${p.categoria}</span>
           <h1>${p.nome}</h1>
-          <span class="product-meta">${p.tipo} • DISPONIBILIDADE SOB CONSULTA</span>
+          <span class="product-meta">ID ${p.id} • ${p.tipo} • DISPONIBILIDADE SOB CONSULTA</span>
           <div class="detail-price">${GLT.money(p.preco)}</div>
           <p>${p.descricao}</p>
           <div class="choice"><strong>TAMANHOS</strong><div class="options">${p.tamanhos.map((tamanho, indice) => `<button class="${indice ? '' : 'selected'}">${tamanho}</button>`).join('')}</div></div>
           <div class="choice"><strong>CORES</strong><div class="options">${p.cores.map((cor, indice) => `<button class="${indice ? '' : 'selected'}">${cor}</button>`).join('')}</div></div>
           <button class="btn consult" data-consult="${p.id}">CONSULTAR PRODUTO</button>
           <button class="btn ghost consult" data-fav="${p.id}">♡ SALVAR NOS FAVORITOS</button>
+          <button class="btn ghost" data-share>↗ COMPARTILHAR PRODUTO</button>
           <div class="features">${p.caracteristicas.map(item => `— ${item}<br>`).join('')}</div>
         </div>`;
 
@@ -65,6 +66,12 @@
           const box = event.target.closest('.options');
           box.querySelectorAll('button').forEach(button => button.classList.remove('selected'));
           event.target.classList.add('selected');
+        }
+        if (event.target.closest('[data-share]')) {
+          const url = location.href;
+          const texto = `${p.nome} — GLT Imports`;
+          if (navigator.share) navigator.share({ title: texto, text: texto, url }).catch(() => {});
+          else navigator.clipboard?.writeText(url).then(() => alert('Link do produto copiado!'));
         }
       });
 

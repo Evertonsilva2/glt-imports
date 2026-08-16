@@ -99,6 +99,7 @@
   .club-track { animation-duration: 70s; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .club-track { animation-play-state: paused; }
+/* Em celulares a faixa continua se movendo; o usuário também pode arrastar a área. */
+@media (max-width: 720px) {
+  .club-marquee { touch-action: pan-y; }
 }
