@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Catálogo | GLT IMPORTS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <main>
+    <section class="page-hero"><span class="kicker">GLT / CATÁLOGO 2026</span><h1>A COLEÇÃO</h1><p>Futebol, rua e luxo em uma curadoria internacional.</p></section>
+    <div class="container catalog-layout">
+      <aside class="filters">
+        <div class="filter-group"><label>CATEGORIA</label><select id="categoryFilter" data-filter="categoria"><option value="">Todas</option><option>Chuteiras</option><option>Camisas</option><option>Tênis</option><option>Luxo</option><option>Joias</option><option>Acessórios</option></select></div>
+        <div class="filter-group"><label>CLUBE</label><select id="clubFilter" data-filter="clube"><option value="">Todos</option></select></div>
+        <div class="filter-group"><label>MARCA</label><select data-filter="marca"><option value="">Todas</option><option>Nike</option><option>Adidas</option><option>Puma</option><option>Jordan</option><option>New Balance</option><option>Asics</option><option>Mizuno</option><option>Umbro</option><option>Lacoste</option><option>Hugo Boss</option><option>Armani</option><option>Catálogo GLT</option></select></div>
+        <div class="filter-group"><label>TIPO</label><select data-filter="tipo"><option value="">Todos</option><option>Campo</option><option>Clube</option><option>Retrô</option><option>Tênis casual</option><option>Casual</option><option>Jaqueta</option><option>Corrente</option><option>Boné</option></select></div>
+        <div class="filter-group"><label>COR</label><select data-filter="cores"><option value="">Todas</option><option>Preto</option><option>Laranja</option><option>Branco</option><option>Prata</option><option>Dourado</option></select></div>
+        <div class="filter-group"><label>TAMANHO</label><select data-filter="tamanhos"><option value="">Todos</option><option>P</option><option>M</option><option>G</option><option>GG</option><option>XGG</option><option>39</option><option>40</option><option>41</option></select></div>
+      </aside>
+      <section>
+        <div class="results-head"><span id="resultCount">0 PRODUTOS</span><span>CURADORIA GLT</span></div>
+        <div class="product-grid" id="catalogGrid"></div>
+        <div class="pagination" id="catalogPagination"></div>
+      </section>
+    </div>
+  </main>
+  <div id="siteFooter"></div>
+  <script src="js/produtos.js"></script>
+  <script src="js/produtos-importados.js"></script>
+  <script src="js/produtos-europa.js"></script>
+  <script src="js/produtos-selecoes.js"></script>
+  <script src="js/produtos-selecoes-ausentes.js"></script>
+  <script src="js/produtos-calcados.js"></script>
+  <script src="js/produtos-chuteiras-extra.js"></script>
+  <script src="js/marcas.js"></script>
+  <script src="js/precos.js"></script>
+  <script src="js/deploy-light.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/filtros.js"></script>
+  <script src="js/busca.js"></script>
+</body>
+</html>
