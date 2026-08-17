@@ -48,6 +48,9 @@
 
     if (produto.categoria === 'Tênis') {
       if ([934, 935, 936, 940, 941, 942, 946, 947, 953].includes(produto.id)) produto.preco = 899.90;
+      else if (produto.id === 967) produto.preco = 699.90;
+      else if (produto.id === 874) produto.preco = 589.90;
+      else if (produto.id >= 839 && produto.id <= 868) produto.preco = 529.90;
       else if (/adidas\s+Adizero\s+Evo\s+SL/i.test(produto.nome)) produto.preco = 589.90;
       else produto.preco = 649.90;
       return;
