@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pagination = document.querySelector('#catalogPagination');
   const clubFilter = document.querySelector('#clubFilter');
   const perPage = 24;
-  let currentPage = 1;
+  let currentPage = Math.max(1, Number(new URLSearchParams(location.search).get('page')) || 1);
 
   const clubs = [...new Set(PRODUTOS.map(product => product.clube).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
   clubFilter.innerHTML += clubs.map(club => `<option value="${club}">${club}</option>`).join('');
@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
       <button data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}>← ANTERIOR</button>
       <span>PÁGINA ${currentPage} DE ${pages}</span>
       <button data-page="${currentPage + 1}" ${currentPage === pages ? 'disabled' : ''}>PRÓXIMA →</button>` : '';
+    const params = new URLSearchParams(location.search);
+    if (currentPage > 1) params.set('page', currentPage); else params.delete('page');
+    history.replaceState(null, '', `${location.pathname}${params.toString() ? `?${params}` : ''}`);
   }
 
   controls.forEach(control => control.addEventListener('change', () => { currentPage = 1; draw(); }));
