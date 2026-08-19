@@ -40,14 +40,14 @@ for (const id of [1061, 1062]) {
 
 window.PRODUTOS.push({
   id: 1062,
-  nome: 'Polo 60709080 — Coleção Cidades',
+  nome: 'Polo Lacoste — 60709080',
   categoria: 'Luxo',
   marca: 'Polo Lacoste',
   preco: 149.99,
   tipo: 'Camisa polo',
   tamanhos: ['M', 'G', 'GG', '2XL'],
   cores: ['Branco Paris', 'Azul Madrid', 'Preto Berlin', 'Preto Chicago', 'Azul-marinho Nova York', 'Verde Londres', 'Vermelho Milão', 'Branco Los Angeles'],
-  descricao: 'Camisa polo masculina de corte casual, com detalhes inspirados em grandes cidades e acabamento confortável. Disponível em várias cores.',
+  descricao: 'Polo Lacoste 60709080, com modelagem masculina, acabamento confortável e opções de cores inspiradas em diferentes cidades.',
   img: 'https://photo.yupoo.com/407131796/55eb269020/small.jpg',
   galeria: [
     'https://photo.yupoo.com/407131796/55eb269020/small.jpg',
