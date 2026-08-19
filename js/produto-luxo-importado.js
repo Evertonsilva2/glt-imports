@@ -33,8 +33,8 @@ window.PRODUTOS.push({
 for (const id of [1061, 1062]) {
   const produto = window.PRODUTOS.find(item => item.id === id);
   if (produto) {
-    produto.img = `assets/images/luxo/1061-1062-local/${id}-${id === 1061 ? 4 : 0}.jpg`;
-    produto.galeria = Array.from({ length: id === 1061 ? 14 : 11 }, (_, i) => `assets/images/luxo/1061-1062-local/${id}-${i}.jpg`);
+    produto.img = `/assets/images/luxo/1061-1062-local/${id}-${id === 1061 ? 4 : 0}.jpg`;
+    produto.galeria = Array.from({ length: id === 1061 ? 14 : 11 }, (_, i) => `/assets/images/luxo/1061-1062-local/${id}-${i}.jpg`);
   }
 }
 
