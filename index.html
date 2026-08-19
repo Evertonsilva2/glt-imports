@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="GLT Imports — futebol, moda, luxo e cultura urbana.">
   <title>GLT IMPORTS | O jogo começa aqui</title>
-  <link rel="icon" type="image/svg+xml" href="assets/icons/glt-favicon.svg">
-  <link rel="icon" type="image/svg+xml" href="assets/icons/glt-favicon.svg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='%23050505' stroke='%23ff5a00' stroke-width='6'/><text x='50' y='63' text-anchor='middle' font-size='38' font-family='Arial' font-weight='bold' fill='%23ff5a00'>GLT</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/glt-favicon.svg">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/banner.css">
@@ -33,7 +32,7 @@
 
     <section class="section container">
       <div class="game reveal">
-        <img class="game-main" src="assets/images/editorial/glt-banner-catalogo-v2.webp" alt="Catálogo premium GLT Imports com camisas, chuteiras, tênis e acessórios">
+        <img class="game-main" src="assets/images/editorial/glt-banner-catalogo-v2.png" alt="Catálogo premium GLT Imports com camisas, chuteiras, tênis e acessórios">
         <div class="game-copy">
           <span class="number">90</span>
           <span class="kicker">O JOGO</span>
@@ -109,7 +108,6 @@
   <script src="js/produto-luxo-importado.js?v=luxo-fotos1"></script>
   <script src="js/marcas.js"></script>
   <script src="js/precos.js"></script>
-  <script src="js/deploy-light.js"></script>
   <script src="js/app.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -138,9 +136,9 @@
         ['Chuteiras', 'Performance para quem decide o jogo.', 'https://images.unsplash.com/photo-1614739947439-ad507bf07111?auto=format&fit=crop&w=1200&h=1500&q=90'],
         ['Camisas', 'Ícones que carregam histórias.', 'https://imgcentauro-a.akamaihd.net/1300x1300/M17JVU02A1.jpg'],
         ['Tênis', 'Do estádio para as ruas.', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85'],
-        ['Luxo', 'Elegância sem regras.', 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85'],
-        ['Joias', 'Detalhes que fazem diferença.', 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85'],
-        ['Acessórios', 'O acabamento do seu estilo.', 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85']
+        ['Luxo', 'Moda masculina de alto padrão.', 'assets/images/luxo/1061-1062-local/1062-3.jpg'],
+        ['Joias', 'Relógios e acessórios masculinos.', 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85'],
+        ['Acessórios', 'Bonés e óculos para completar o visual.', 'https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=1000&q=85']
       ];
       categoryGrid.innerHTML = cats.map(c => `<article class="category reveal"><img src="${c[2]}" alt="${c[0]}"><div class="cat-copy"><h3>${c[0]}</h3><p>${c[1]}</p><a href="produtos.html?cat=${c[0]}">EXPLORAR →</a></div></article>`).join('');
       const primeiro = (teste, usados = new Set()) => PRODUTOS.find(produto => !usados.has(produto.id) && teste(produto));
