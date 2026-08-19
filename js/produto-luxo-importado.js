@@ -42,7 +42,7 @@ window.PRODUTOS.push({
   id: 1062,
   nome: 'Polo Lacoste — 60709080',
   categoria: 'Luxo',
-  marca: 'Polo Lacoste',
+  marca: 'Lacoste',
   preco: 149.99,
   tipo: 'Camisa polo',
   tamanhos: ['M', 'G', 'GG', '2XL'],
