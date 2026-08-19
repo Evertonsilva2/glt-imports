@@ -29,6 +29,15 @@ window.PRODUTOS.push({
   caracteristicas: ['Curadoria GLT Imports', 'Modelagem casual masculina', 'Disponibilidade sob consulta']
 });
 
+// As fotos ficam hospedadas localmente para evitar bloqueios do fornecedor.
+for (const id of [1061, 1062]) {
+  const produto = window.PRODUTOS.find(item => item.id === id);
+  if (produto) {
+    produto.img = `assets/images/luxo/1061-1062-local/${id}-0.jpg`;
+    produto.galeria = Array.from({ length: id === 1061 ? 14 : 11 }, (_, i) => `assets/images/luxo/1061-1062-local/${id}-${i}.jpg`);
+  }
+}
+
 window.PRODUTOS.push({
   id: 1062,
   nome: 'Polo 60709080 — Coleção Cidades',
