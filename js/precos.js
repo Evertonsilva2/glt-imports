@@ -46,7 +46,11 @@
     if (produto.nome === 'Camisa Flamengo Centenário Retrô 1994') produto.marca = 'Umbro';
     if (/Mizuno\s+(?:Alpha\s+III|Morelia\s+Neo\s+V\s+Beta)/i.test(produto.nome)) produto.preco = 599.99;
     if (produto.categoria === 'Chuteiras') {
+      if ([1016, 1017].includes(produto.id)) produto.preco = 599.90;
+      else if ([984, 990, 1002, 1014, 1019, 1018].includes(produto.id)) produto.preco = 699.90;
+      else {
       produto.preco = 549.99;
+      }
       return;
     }
 
