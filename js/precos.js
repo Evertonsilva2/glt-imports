@@ -39,6 +39,10 @@
   const versaoPremium = /retr[oô]|vers[aã]o\s+(?:do\s+)?jogador|players?[\s-]+(?:version|edition)/i;
 
   PRODUTOS.forEach(produto => {
+    if ([887, 891, 892, 893, 894, 895, 896, 897].includes(produto.id)) {
+      produto.nome = produto.nome.replace(/\bNike\s*/ig, '').replace(/\s+/g, ' ').trim();
+      if (produto.descricao) produto.descricao = produto.descricao.replace(/\bNike\s*/ig, '').replace(/\s+/g, ' ').trim();
+    }
     if (produto.nome === 'Camisa Flamengo Centenário Retrô 1994') produto.marca = 'Umbro';
     if (/Mizuno\s+(?:Alpha\s+III|Morelia\s+Neo\s+V\s+Beta)/i.test(produto.nome)) produto.preco = 599.99;
     if (produto.categoria === 'Chuteiras') {
