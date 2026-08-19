@@ -49,6 +49,8 @@
     if (produto.categoria === 'Tênis') {
       if ([934, 935, 936, 940, 941, 942, 946, 947, 953].includes(produto.id)) produto.preco = 899.90;
       else if ([811, 813, 815, 816, 817, 818, 819, 820, 821, 822, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838].includes(produto.id)) produto.preco = 989.90;
+      else if (produto.id === 908) produto.preco = 799.90;
+      else if ([887, 891, 892, 893, 894, 895, 896, 897].includes(produto.id)) produto.preco = 529.90;
       else if (produto.id === 967) produto.preco = 699.90;
       else if (produto.id === 874) produto.preco = 589.90;
       else if (produto.id >= 839 && produto.id <= 868) produto.preco = 529.90;
