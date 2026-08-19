@@ -2,14 +2,14 @@
 window.PRODUTOS = window.PRODUTOS || [];
 window.PRODUTOS.push({
   id: 1061,
-  nome: 'Short Masculino 608090150 — Modelo 23',
+  nome: 'Short Balenciaga — 608090150 Modelo 23',
   categoria: 'Luxo',
-  marca: 'GLT Selection',
+  marca: 'Balenciaga',
   preco: 149.99,
   tipo: 'Shorts',
   tamanhos: ['M', 'G', 'GG', 'XG'],
   cores: ['Preto'],
-  descricao: 'Short masculino de corte casual, com acabamento confortável e visual urbano premium.',
+  descricao: 'Short Balenciaga 608090150 Modelo 23, com corte casual, acabamento confortável e estética urbana premium.',
   img: 'https://photo.yupoo.com/407131796/bfea46023f/small.jpg',
   galeria: [
     'https://photo.yupoo.com/407131796/bfea46023f/small.jpg',
