@@ -28,3 +28,29 @@ window.PRODUTOS.push({
   ],
   caracteristicas: ['Curadoria GLT Imports', 'Modelagem casual masculina', 'Disponibilidade sob consulta']
 });
+
+window.PRODUTOS.push({
+  id: 1062,
+  nome: 'Polo 60709080 — Coleção Cidades',
+  categoria: 'Luxo',
+  marca: 'Polo Lacoste',
+  preco: 149.99,
+  tipo: 'Camisa polo',
+  tamanhos: ['M', 'G', 'GG', '2XL'],
+  cores: ['Branco Paris', 'Azul Madrid', 'Preto Berlin', 'Preto Chicago', 'Azul-marinho Nova York', 'Verde Londres', 'Vermelho Milão', 'Branco Los Angeles'],
+  descricao: 'Camisa polo masculina de corte casual, com detalhes inspirados em grandes cidades e acabamento confortável. Disponível em várias cores.',
+  img: 'https://photo.yupoo.com/407131796/55eb269020/small.jpg',
+  galeria: [
+    'https://photo.yupoo.com/407131796/55eb269020/small.jpg',
+    'https://photo.yupoo.com/407131796/1addf6b88d/small.jpg',
+    'https://photo.yupoo.com/407131796/3f6b30d03a/small.jpg',
+    'https://photo.yupoo.com/407131796/ba9eb3c2dc/small.jpg',
+    'https://photo.yupoo.com/407131796/ff5e21df00/small.jpg',
+    'https://photo.yupoo.com/407131796/d4adf8bbda/small.jpg',
+    'https://photo.yupoo.com/407131796/9221755a0b/small.jpg',
+    'https://photo.yupoo.com/407131796/b29e6dba72/small.jpg',
+    'https://photo.yupoo.com/407131796/50d33d50e7/small.jpg',
+    'https://photo.yupoo.com/407131796/67f1ce1745/small.jpg'
+  ],
+  caracteristicas: ['Coleção de edição urbana', 'Modelagem masculina', 'Disponibilidade sob consulta']
+});
