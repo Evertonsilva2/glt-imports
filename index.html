@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="GLT Imports — futebol, moda, luxo e cultura urbana.">
   <title>GLT IMPORTS | O jogo começa aqui</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/glt-favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/glt-favicon.svg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='%23050505' stroke='%23ff5a00' stroke-width='6'/><text x='50' y='63' text-anchor='middle' font-size='38' font-family='Arial' font-weight='bold' fill='%23ff5a00'>GLT</text></svg>">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/clubs.css">
+  <link rel="stylesheet" href="css/personal-photo.css">
 </head>
 <body>
   <div class="loader"><span class="logo"><span>GLT</span></span></div>
@@ -35,8 +39,18 @@
           <span class="kicker">O JOGO</span>
           <h2>O JOGO NÃO TERMINA NO CAMPO.</h2>
           <p>A GLT conecta futebol, moda, luxo e cultura urbana em uma seleção criada para quem transforma paixão em estilo.</p>
-          <img class="game-small" src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=700&q=85" alt="Editorial de moda urbana">
+          <img class="game-small" src="assets/images/editorial/glt-personal-photo.jpg" alt="Foto editorial da GLT Imports">
         </div>
+      </div>
+    </section>
+
+    <section class="club-showcase" aria-label="Clubes e seleções em destaque">
+      <div class="club-showcase-head container">
+        <span class="kicker">CLUBES E SELEÇÕES</span>
+        <span class="club-showcase-count">CLUBES E SELEÇÕES EM DESTAQUE</span>
+      </div>
+      <div class="club-marquee" aria-label="Clubes disponíveis no catálogo">
+        <div class="club-track" id="clubTrack"></div>
       </div>
     </section>
 
@@ -92,18 +106,40 @@
   <script src="js/produtos-selecoes-ausentes.js"></script>
   <script src="js/produtos-calcados.js"></script>
   <script src="js/produtos-chuteiras-extra.js"></script>
+  <script src="js/produto-luxo-importado.js?v=luxo-fotos1"></script>
   <script src="js/marcas.js"></script>
   <script src="js/precos.js"></script>
   <script src="js/deploy-light.js"></script>
   <script src="js/app.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const clubs = [
+        ['Brasil', 'brasil', 'svg'], ['Real Madrid', 'real-madrid'], ['Boca Juniors', 'boca-juniors'],
+        ['Bayern de Munique', 'bayern'], ['Flamengo', 'flamengo'], ['França', 'franca-peito', 'webp'],
+        ['Liverpool', 'liverpool'], ['River Plate', 'river-plate'], ['Barcelona', 'barcelona'],
+        ['Argentina', 'argentina', 'svg'], ['Palmeiras', 'palmeiras'], ['Juventus', 'juventus'],
+        ['Arsenal', 'arsenal'], ['Borussia Dortmund', 'dortmund'], ['Fluminense', 'fluminense'],
+        ['Espanha', 'espanha-peito', 'png'], ['Inter de Milão', 'inter'], ['Atlético de Madrid', 'atletico-madrid'],
+        ['Racing', 'racing'], ['Manchester City', 'manchester-city'], ['Botafogo', 'botafogo'],
+        ['Alemanha', 'alemanha-peito', 'webp'], ['Milan', 'milan'], ['PSG', 'psg'],
+        ['Estudiantes', 'estudiantes'], ['Chelsea', 'chelsea'], ['Bayer Leverkusen', 'leverkusen'],
+        ['Independiente', 'independiente'], ['Napoli', 'napoli'], ['Manchester United', 'manchester-united'],
+        ['Monaco', 'monaco'], ['San Lorenzo', 'san-lorenzo'], ['Tottenham', 'tottenham'],
+        ['Olympique de Marseille', 'marseille'], ['Porto', 'porto'], ['RB Leipzig', 'leipzig'],
+        ['Valencia', 'valencia'], ['Lazio', 'lazio'], ['Newcastle', 'newcastle'], ['Lyon', 'lyon'],
+        ['Sevilla', 'sevilla'], ['Benfica', 'benfica'], ['Lille', 'lille'],
+        ['Eintracht Frankfurt', 'frankfurt'], ['Roma', 'roma'], ['Villarreal', 'villarreal']
+      ];
+      const nationalTeams = new Set(['Brasil', 'Argentina', 'Alemanha', 'França', 'Espanha']);
+      const clubItems = clubs.map(([name, slug, extension = 'png']) => `<div class="club-item ${nationalTeams.has(name) ? 'national-item' : ''}" title="${name}"><span class="club-crest"><img src="assets/images/clubes/${slug}.${extension}" alt="Escudo ${name}" loading="lazy"></span><span class="club-name">${name}</span></div>`).join('');
+      clubTrack.innerHTML = `<div class="club-set">${clubItems}</div><div class="club-set" aria-hidden="true">${clubItems}</div>`;
+
       const cats = [
         ['Chuteiras', 'Performance para quem decide o jogo.', 'https://images.unsplash.com/photo-1614739947439-ad507bf07111?auto=format&fit=crop&w=1200&h=1500&q=90'],
         ['Camisas', 'Ícones que carregam histórias.', 'https://imgcentauro-a.akamaihd.net/1300x1300/M17JVU02A1.jpg'],
         ['Tênis', 'Do estádio para as ruas.', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85'],
-        ['Luxo', 'Elegância sem regras.', 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85'],
-        ['Joias', 'Detalhes que fazem diferença.', 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85'],
+        ['Luxo', 'Moda masculina de alto padrão.', 'assets/images/luxo/1061-1062-local/1062-3.jpg'],
+        ['Joias', 'Relógios e acessórios masculinos.', 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85'],
         ['Acessórios', 'O acabamento do seu estilo.', 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85']
       ];
       categoryGrid.innerHTML = cats.map(c => `<article class="category reveal"><img src="${c[2]}" alt="${c[0]}"><div class="cat-copy"><h3>${c[0]}</h3><p>${c[1]}</p><a href="produtos.html?cat=${c[0]}">EXPLORAR →</a></div></article>`).join('');
