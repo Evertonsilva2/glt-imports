@@ -76,3 +76,9 @@ if (short1143) {
   short1143.img = '/assets/images/luxo/calca-1143/3.jpg';
   short1143.galeria = ['/assets/images/luxo/calca-1143/0.jpg', '/assets/images/luxo/calca-1143/3.jpg'];
 }
+
+const short1132 = window.PRODUTOS.find(item => item.id === 1132);
+if (short1132) {
+  short1132.img = '/assets/images/luxo/calca-1132/3.jpg';
+  short1132.galeria = ['/assets/images/luxo/calca-1132/0.jpg', '/assets/images/luxo/calca-1132/3.jpg'];
+}
