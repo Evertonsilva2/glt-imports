@@ -63,3 +63,10 @@ window.PRODUTOS.push({
   ],
   caracteristicas: ['Coleção de edição urbana', 'Modelagem masculina', 'Disponibilidade sob consulta']
 });
+
+// Substitui também a capa e a galeria da polo após o cadastro do produto.
+const poloLacoste = window.PRODUTOS.find(item => item.id === 1062);
+if (poloLacoste) {
+  poloLacoste.img = '/assets/images/luxo/1061-1062-local/1062-0.jpg';
+  poloLacoste.galeria = Array.from({ length: 11 }, (_, i) => `/assets/images/luxo/1061-1062-local/1062-${i}.jpg`);
+}
