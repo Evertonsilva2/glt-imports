@@ -115,7 +115,7 @@ if (item1148) {
   item1148.nome = 'Blusa masculina — Modelo 2';
   item1148.tipo = 'Blusa masculina';
   item1148.descricao = 'Blusa masculina com acabamento confortável e estilo casual premium.';
-  item1148.img = '/assets/images/luxo/conjunto-1148/3.jpg';
+  item1148.img = '/assets/images/luxo/conjunto-1148/0.jpg';
   item1148.galeria = ['/assets/images/luxo/conjunto-1148/0.jpg', '/assets/images/luxo/conjunto-1148/3.jpg'];
 }
 
