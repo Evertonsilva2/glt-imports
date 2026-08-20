@@ -199,6 +199,8 @@ for (const id of [1161,1162,1163,1164,1165]) { const p=window.PRODUTOS.find(item
 
 const BONES_ACESSORIOS = [1166,1167,1168,1169,1170,1171,1172,1173,1174,1175,1176,1177];
 for (const [indice,id] of BONES_ACESSORIOS.entries()) window.PRODUTOS.push({id,nome:`Boné masculino — Modelo ${indice+1}`,categoria:'Acessórios',marca:'Catálogo GLT',preco:149.99,tipo:'Boné',tamanhos:['Único'],cores:['Conforme imagem'],descricao:'Boné masculino selecionado do lote de acessórios GLT Imports.',img:`/assets/images/acessorios/bones/${id}/0.jpg`,galeria:[`/assets/images/acessorios/bones/${id}/0.jpg`],caracteristicas:['Curadoria GLT Imports','Acessório masculino','Disponibilidade sob consulta']});
+const CHINELOS_ACESSORIOS = [1178,1179,1180,1181,1182,1183,1184,1185];
+for (const [indice,id] of CHINELOS_ACESSORIOS.entries()) window.PRODUTOS.push({id,nome:`Chinelo masculino — Modelo ${indice+1}`,categoria:'Acessórios',marca:'Catálogo GLT',preco:149.99,tipo:'Chinelo',tamanhos:['39','40','41','42','43','44'],cores:['Conforme imagem'],descricao:'Chinelo masculino selecionado do lote de calçados GLT Imports.',img:`/assets/images/acessorios/chinelos/${id}/0.jpg`,galeria:[`/assets/images/acessorios/chinelos/${id}/0.jpg`],caracteristicas:['Curadoria GLT Imports','Modelo masculino','Disponibilidade sob consulta']});
 
 const item1159 = window.PRODUTOS.find(item => item.id === 1159);
 if (item1159) item1159.img = '/assets/images/luxo/6080100730/3.jpg';
