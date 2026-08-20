@@ -142,3 +142,6 @@ if (item1152) {
   item1152.img = '/assets/images/luxo/philipp-1152/3.jpg';
   item1152.galeria = [0, 3].map(i => `/assets/images/luxo/philipp-1152/${i}.jpg`);
 }
+
+const item1153 = window.PRODUTOS.find(item => item.id === 1153);
+if (item1153) item1153.galeria = [0, 3].map(i => `/assets/images/luxo/manga-longa-1153/${i}.jpg`);
