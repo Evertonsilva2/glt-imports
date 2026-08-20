@@ -16,15 +16,15 @@ for (const item of LUXO_NOVOS) {
 }
 
 const POLOS_T = [
-  [1103, 'Polo masculina — 608080120 Modelo 20', 'polo-t-1103', 6, 'Preto'],
-  [1104, 'Polo masculina — 608080120 Modelo 19', 'polo-t-1104', 5, 'Branco'],
-  [1105, 'Polo masculina — 608080120 Modelo 18', 'polo-t-1105', 7, 'Azul-marinho'],
-  [1106, 'Polo masculina — 608080120 Modelo 17', 'polo-t-1106', 7, 'Verde'],
-  [1107, 'Polo masculina — 608080120 Modelo 15', 'polo-t-1107', 6, 'Vermelho']
+  [1103, 'Camisa masculina — 608080120 Modelo 20', 'polo-t-1103', 6, 'Preto'],
+  [1104, 'Camisa masculina — 608080120 Modelo 19', 'polo-t-1104', 5, 'Branco'],
+  [1105, 'Camisa masculina — 608080120 Modelo 18', 'polo-t-1105', 7, 'Azul-marinho'],
+  [1106, 'Camisa masculina — 608080120 Modelo 17', 'polo-t-1106', 7, 'Verde'],
+  [1107, 'Camisa masculina — 608080120 Modelo 15', 'polo-t-1107', 6, 'Vermelho']
 ];
 for (const [id, nome, pasta, fotos, cor] of POLOS_T) {
-  window.PRODUTOS.push({ id, nome, categoria: 'Luxo', marca: 'GLT Imports', preco: 149.99,
-    tipo: 'Camisa polo', tamanhos: ['M','G','GG','3XL'], cores: [cor],
+  window.PRODUTOS.push({ id, nome, categoria: 'Luxo', marca: 'Sem marca informada', preco: 149.99,
+    tipo: 'Camisa gola polo', tamanhos: ['M','G','GG','3XL'], cores: [cor],
     descricao: `${nome}, com gola polo, modelagem masculina e acabamento confortável.`,
     img: `/assets/images/luxo/${pasta}/0.jpg`,
     galeria: Array.from({length:fotos}, (_,i)=>`/assets/images/luxo/${pasta}/${i}.jpg`),
