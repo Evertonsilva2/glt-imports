@@ -163,7 +163,7 @@
       const maisVendidos = [
         primeiro(p => p.categoria === 'Camisas' && p.clube === 'Argentina'),
         primeiro(p => p.categoria === 'Camisas' && p.clube === 'Alemanha'),
-        primeiro(p => p.categoria === 'Tênis' && /corrida|caminhada|treino/i.test(`${p.tipo} ${p.linha}`)),
+        primeiro(p => p.id === 1174),
         primeiro(p => p.categoria === 'Chuteiras' && p.fonte === 'Soccer9999')
       ].filter(Boolean);
       dropsGrid.innerHTML = maisVendidos.map(GLT.card).join('');
