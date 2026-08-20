@@ -48,7 +48,7 @@
           <span class="kicker">${p.marca} / ${p.categoria}</span>
           <h1>${p.nome}</h1>
           <span class="product-meta">ID ${p.id} • ${p.tipo} • DISPONIBILIDADE SOB CONSULTA</span>
-          <div class="detail-price">${GLT.money(p.preco)}</div>
+          <div class="detail-price">${GLT.displayPrice(p)}</div>
           <p>${p.descricao}</p>
           <div class="choice"><strong>TAMANHOS</strong><div class="options">${p.tamanhos.map((tamanho, indice) => `<button class="${indice ? '' : 'selected'}">${tamanho}</button>`).join('')}</div></div>
           <div class="choice"><strong>CORES</strong><div class="options">${p.cores.map((cor, indice) => `<button class="${indice ? '' : 'selected'}">${cor}</button>`).join('')}</div></div>
