@@ -154,3 +154,6 @@ if (item1156) {
   item1156.img = '/assets/images/luxo/sueter-1156/3.jpg';
   item1156.galeria = [0, 3].map(i => `/assets/images/luxo/sueter-1156/${i}.jpg`);
 }
+
+const item1108 = window.PRODUTOS.find(item => item.id === 1108);
+if (item1108) item1108.galeria = [0, 3, 4].map(i => `/assets/images/luxo/polo-t-1108/${i}.jpg`);
