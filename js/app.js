@@ -1,7 +1,7 @@
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const money=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 // Itens removidos do catálogo a pedido do proprietário.
-window.PRODUTOS = (window.PRODUTOS || []).filter(p => ![22,23,24,25,26,1125,1126,1129,1131,1135,1140,1141].includes(Number(p.id)));
+window.PRODUTOS = (window.PRODUTOS || []).filter(p => ![22,23,24,25,26,1125,1126,1127,1129,1131,1135,1140,1141].includes(Number(p.id)));
 const state={favorites:JSON.parse(localStorage.getItem('glt-favorites')||'[]')};
 const contacts={whatsapp:'5537998268978',instagram:'https://www.instagram.com/glt_imports/'};
 const logo=()=>`<span class="logo"><span>GLT</span></span>`;
