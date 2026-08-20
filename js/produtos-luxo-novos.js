@@ -100,3 +100,12 @@ for (const [base, tipo, pasta] of LOTES_LUXO) for (let n = 0; n < 2; n++) {
     img: `/assets/images/luxo/${pasta}-${id}/0.jpg`, galeria: Array.from({length:4}, (_,i)=>`/assets/images/luxo/${pasta}-${id}/${i}.jpg`),
     caracteristicas: ['Curadoria GLT Imports','Modelagem masculina','Disponibilidade sob consulta'] });
 }
+
+const item1147 = window.PRODUTOS.find(item => item.id === 1147);
+if (item1147) {
+  item1147.nome = 'Short masculino — Modelo 1';
+  item1147.tipo = 'Short masculino';
+  item1147.descricao = 'Short masculino com modelagem confortável e acabamento casual.';
+  item1147.img = '/assets/images/luxo/conjunto-1147/3.jpg';
+  item1147.galeria = ['/assets/images/luxo/conjunto-1147/0.jpg', '/assets/images/luxo/conjunto-1147/3.jpg'];
+}
