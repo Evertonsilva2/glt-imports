@@ -30,3 +30,20 @@ for (const [id, nome, pasta, fotos, cor] of POLOS_T) {
     galeria: Array.from({length:fotos}, (_,i)=>`/assets/images/luxo/${pasta}/${i}.jpg`),
     caracteristicas: ['Curadoria GLT Imports','Modelagem masculina','Disponibilidade sob consulta'] });
 }
+
+const POLOS_T_EXTRAS = [
+  [1108, 'Camisa masculina — 608080120 Modelo 14', 'polo-t-1108', 'Cinza'], [1109, 'Camisa masculina — 608080120 Modelo 13', 'polo-t-1109', 'Azul'],
+  [1110, 'Camisa masculina — 608080120 Modelo 12', 'polo-t-1110', 'Verde-escuro'], [1111, 'Camisa masculina — 608080120 Modelo 11', 'polo-t-1111', 'Bege'],
+  [1112, 'Camisa masculina — 608080120 Modelo 10', 'polo-t-1112', 'Marrom'], [1113, 'Camisa masculina — 608080120 Modelo 9', 'polo-t-1113', 'Vinho'],
+  [1114, 'Camisa masculina — 608080120 Modelo 8', 'polo-t-1114', 'Branco'], [1115, 'Camisa masculina — 608080120 Modelo 7', 'polo-t-1115', 'Preto'],
+  [1116, 'Camisa masculina — 608080120 Modelo 6', 'polo-t-1116', 'Azul-marinho'], [1117, 'Camisa masculina — 608080120 Modelo 5', 'polo-t-1117', 'Verde'],
+  [1118, 'Camisa masculina — 608080120 Modelo 4', 'polo-t-1118', 'Cinza'], [1119, 'Camisa masculina — 608080120 Modelo 3', 'polo-t-1119', 'Azul-claro'],
+  [1120, 'Camisa masculina — 608080120 Modelo 2', 'polo-t-1120', 'Preto'], [1121, 'Camisa masculina — 608080120 Modelo 1', 'polo-t-1121', 'Branco']
+];
+for (const [id, nome, pasta, cor] of POLOS_T_EXTRAS) {
+  window.PRODUTOS.push({ id, nome, categoria: 'Luxo', marca: 'Marca própria', preco: 149.99,
+    tipo: 'Camisa gola polo', tamanhos: ['M','G','GG','3XL'], cores: [cor],
+    descricao: `${nome}, camisa masculina de gola polo com acabamento confortável.`,
+    img: `/assets/images/luxo/${pasta}/0.jpg`, galeria: Array.from({length:6}, (_,i)=>`/assets/images/luxo/${pasta}/${i}.jpg`),
+    caracteristicas: ['Curadoria GLT Imports','Modelagem masculina','Disponibilidade sob consulta'] });
+}
