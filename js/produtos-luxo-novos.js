@@ -145,3 +145,6 @@ if (item1152) {
 
 const item1153 = window.PRODUTOS.find(item => item.id === 1153);
 if (item1153) item1153.galeria = [0, 3].map(i => `/assets/images/luxo/manga-longa-1153/${i}.jpg`);
+
+const item1154 = window.PRODUTOS.find(item => item.id === 1154);
+if (item1154) item1154.galeria = [0, 3].map(i => `/assets/images/luxo/manga-longa-1154/${i}.jpg`);
