@@ -174,3 +174,6 @@ for (let id = 1113; id <= 1121; id++) {
   const item = window.PRODUTOS.find(product => product.id === id);
   if (item) item.galeria = [0, 3, 4].map(i => `/assets/images/luxo/polo-t-${id}/${i}.jpg`);
 }
+
+const item1115 = window.PRODUTOS.find(item => item.id === 1115);
+if (item1115) item1115.img = '/assets/images/luxo/polo-t-1115/2.jpg';
