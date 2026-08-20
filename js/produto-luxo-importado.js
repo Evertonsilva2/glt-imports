@@ -68,5 +68,6 @@ window.PRODUTOS.push({
 const poloLacoste = window.PRODUTOS.find(item => item.id === 1062);
 if (poloLacoste) {
   poloLacoste.img = '/assets/images/luxo/1061-1062-local/1062-0.jpg';
-  poloLacoste.galeria = Array.from({ length: 11 }, (_, i) => `/assets/images/luxo/1061-1062-local/1062-${i}.jpg`);
+  poloLacoste.galeria = Array.from({ length: 10 }, (_, i) => `/assets/images/luxo/1061-1062-local/1062-${i}.jpg`);
 }
+
