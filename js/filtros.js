@@ -11,8 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
   clubFilter.innerHTML += clubs.map(club => `<option value="${club}">${club}</option>`).join('');
 
   const controls = [...document.querySelectorAll('[data-filter]')];
+  const typeFilter = document.querySelector('[data-filter="tipo"]');
+  const clubGroup = clubFilter.closest('.filter-group');
+  const defaultTypeOptions = typeFilter.innerHTML;
+  function adaptCategory() {
+    const luxury = document.querySelector('#categoryFilter').value === 'Luxo';
+    if (clubGroup) clubGroup.hidden = luxury;
+    if (typeFilter && luxury) {
+      const types = [...new Set(PRODUTOS.filter(p => p.categoria === 'Luxo').map(p => p.tipo).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'pt-BR'));
+      typeFilter.innerHTML = '<option value="">Todos</option>' + types.map(type => `<option value="${type}">${type}</option>`).join('');
+    } else if (typeFilter) typeFilter.innerHTML = defaultTypeOptions;
+  }
   const initial = new URLSearchParams(location.search).get('cat');
   if (initial) document.querySelector('#categoryFilter').value = initial;
+  adaptCategory();
 
   function filteredProducts() {
     return PRODUTOS.filter(product => controls.every(control => {
@@ -39,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     history.replaceState(null, '', `${location.pathname}${params.toString() ? `?${params}` : ''}`);
   }
 
-  controls.forEach(control => control.addEventListener('change', () => { currentPage = 1; draw(); }));
+  controls.forEach(control => control.addEventListener('change', () => { adaptCategory(); currentPage = 1; draw(); }));
   pagination.addEventListener('click', event => {
     const button = event.target.closest('[data-page]');
     if (!button || button.disabled) return;
