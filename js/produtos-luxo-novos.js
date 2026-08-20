@@ -195,6 +195,7 @@ const ACESSORIOS_CINTOS = [
   [1165, 'Cinto masculino — 607130205', ['https://photo.yupoo.com/407131796/7306b1814d/small.jpg','https://photo.yupoo.com/407131796/bff6d55470/small.jpg','https://photo.yupoo.com/407131796/9d502691c2/small.jpg','https://photo.yupoo.com/407131796/593013061b/small.jpg']]
 ];
 for (const [id, nome, galeria] of ACESSORIOS_CINTOS) window.PRODUTOS.push({id,nome,categoria:'Acessórios',marca:'Catálogo GLT',preco:149.99,tipo:'Cinto',tamanhos:['Único'],cores:['Conforme imagens'],descricao:`${nome}, acessório masculino com acabamento premium e disponibilidade sob consulta.`,img:galeria[0],galeria,caracteristicas:['Curadoria GLT Imports','Acessório masculino','Disponibilidade sob consulta']});
+for (const id of [1161,1162,1163,1164,1165]) { const p=window.PRODUTOS.find(item=>item.id===id); if(p){ const count=id===1162?3:id===1163?4:4; p.galeria=Array.from({length:count},(_,i)=>`/assets/images/acessorios/cintos/${id}/${i}.jpg`); p.img=p.galeria[0]; } }
 
 const item1159 = window.PRODUTOS.find(item => item.id === 1159);
 if (item1159) item1159.img = '/assets/images/luxo/6080100730/3.jpg';
