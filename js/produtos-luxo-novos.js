@@ -124,3 +124,9 @@ if (item1149) {
   item1149.img = '/assets/images/luxo/nikad-1149/0.jpg';
   item1149.galeria = [0, 3].map(i => `/assets/images/luxo/nikad-1149/${i}.jpg`);
 }
+
+const item1150 = window.PRODUTOS.find(item => item.id === 1150);
+if (item1150) {
+  item1150.img = '/assets/images/luxo/nikad-1150/3.jpg';
+  item1150.galeria = [0, 3].map(i => `/assets/images/luxo/nikad-1150/${i}.jpg`);
+}
