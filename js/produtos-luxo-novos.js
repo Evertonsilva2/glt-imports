@@ -166,3 +166,6 @@ if (item1110) item1110.galeria = [0, 3, 4].map(i => `/assets/images/luxo/polo-t-
 
 const item1111 = window.PRODUTOS.find(item => item.id === 1111);
 if (item1111) item1111.galeria = [0, 3, 4].map(i => `/assets/images/luxo/polo-t-1111/${i}.jpg`);
+
+const item1112 = window.PRODUTOS.find(item => item.id === 1112);
+if (item1112) item1112.galeria = [0, 3, 4].map(i => `/assets/images/luxo/polo-t-1112/${i}.jpg`);
