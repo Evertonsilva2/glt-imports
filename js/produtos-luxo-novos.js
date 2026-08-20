@@ -88,3 +88,15 @@ if (short1134) {
   short1134.img = '/assets/images/luxo/calca-1134/3.jpg';
   short1134.galeria = ['/assets/images/luxo/calca-1134/0.jpg', '/assets/images/luxo/calca-1134/3.jpg'];
 }
+
+const LOTES_LUXO = [
+  [1147, 'Conjunto masculino', 'conjunto'], [1149, 'Moda esportiva masculina', 'nikad'], [1151, 'Camisa masculina', 'philipp'],
+  [1153, 'Camisa manga longa', 'manga-longa'], [1155, 'Suéter masculino', 'sueter'], [1157, 'Jaqueta masculina', 'jaqueta-pluma']
+];
+for (const [base, tipo, pasta] of LOTES_LUXO) for (let n = 0; n < 2; n++) {
+  const id = base + n;
+  window.PRODUTOS.push({ id, nome: `${tipo} — Modelo ${n + 1}`, categoria: 'Luxo', marca: 'Marca própria', preco: 149.99,
+    tipo, tamanhos: ['M','G','GG','3XL'], cores: ['Preto'], descricao: `${tipo} masculino com acabamento confortável e estilo premium.`,
+    img: `/assets/images/luxo/${pasta}-${id}/0.jpg`, galeria: Array.from({length:4}, (_,i)=>`/assets/images/luxo/${pasta}-${id}/${i}.jpg`),
+    caracteristicas: ['Curadoria GLT Imports','Modelagem masculina','Disponibilidade sob consulta'] });
+}
