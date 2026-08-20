@@ -1,7 +1,9 @@
 // Novos itens de Luxo cadastrados a partir dos álbuns autorizados.
 const LUXO_NOVOS = [
   { id: 1101, nome: 'Jaqueta masculina — 608130120 Modelo 4', tipo: 'Jaqueta', pasta: '608130120', capa: 6, fotos: 8, cores: ['Preto'], tamanhos: ['M','G','GG','3XL'] },
-  { id: 1102, nome: 'Conjunto masculino — 608160225 Modelo 20', tipo: 'Conjunto', pasta: '608160225', capa: 2, fotos: 8, cores: ['Preto'], tamanhos: ['M','G','GG','3XL'] }
+  { id: 1102, nome: 'Conjunto masculino — 608160225 Modelo 20', tipo: 'Conjunto', pasta: '608160225', capa: 2, fotos: 8, cores: ['Preto'], tamanhos: ['M','G','GG','3XL'] },
+  { id: 1159, nome: 'Jaqueta masculina — 6080100730 Modelo 18', tipo: 'Jaqueta', pasta: '6080100730', capa: 0, fotos: 19, cores: ['Preto'], tamanhos: ['M','G','GG','3XL','4XL'] },
+  { id: 1160, nome: 'Suéter masculino — 608090170 Modelo 18', tipo: 'Suéter', pasta: '608090170', capa: 0, fotos: 11, cores: ['Conforme imagens'], tamanhos: ['M','G','GG','3XL','4XL'] }
 ];
 window.PRODUTOS = window.PRODUTOS || [];
 for (const item of LUXO_NOVOS) {
