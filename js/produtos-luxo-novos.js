@@ -120,4 +120,7 @@ if (item1148) {
 }
 
 const item1149 = window.PRODUTOS.find(item => item.id === 1149);
-if (item1149) item1149.galeria = [0, 3].map(i => `/assets/images/luxo/nikad-1149/${i}.jpg`);
+if (item1149) {
+  item1149.img = '/assets/images/luxo/nikad-1149/0.jpg';
+  item1149.galeria = [0, 3].map(i => `/assets/images/luxo/nikad-1149/${i}.jpg`);
+}
