@@ -136,3 +136,9 @@ if (item1151) {
   item1151.img = '/assets/images/luxo/philipp-1151/3.jpg';
   item1151.galeria = [0, 3].map(i => `/assets/images/luxo/philipp-1151/${i}.jpg`);
 }
+
+const item1152 = window.PRODUTOS.find(item => item.id === 1152);
+if (item1152) {
+  item1152.img = '/assets/images/luxo/philipp-1152/3.jpg';
+  item1152.galeria = [0, 3].map(i => `/assets/images/luxo/philipp-1152/${i}.jpg`);
+}
