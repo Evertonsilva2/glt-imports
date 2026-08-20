@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const controls = [...document.querySelectorAll('[data-filter]')];
   const typeFilter = document.querySelector('[data-filter="tipo"]');
+  const brandFilter = document.querySelector('[data-filter="marca"]');
   const clubGroup = clubFilter.closest('.filter-group');
   const defaultTypeOptions = typeFilter.innerHTML;
+  const defaultBrandOptions = brandFilter.innerHTML;
   function adaptCategory() {
     const luxury = document.querySelector('#categoryFilter').value === 'Luxo';
     if (clubGroup) clubGroup.hidden = luxury;
@@ -21,6 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const types = [...new Set(PRODUTOS.filter(p => p.categoria === 'Luxo').map(p => p.tipo).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'pt-BR'));
       typeFilter.innerHTML = '<option value="">Todos</option>' + types.map(type => `<option value="${type}">${type}</option>`).join('');
     } else if (typeFilter) typeFilter.innerHTML = defaultTypeOptions;
+    if (brandFilter && luxury) {
+      const luxuryBrands = ['Lacoste','Hugo Boss','Armani','Calvin Klein','Tommy Hilfiger','Balenciaga','Moncler','Burberry','Prada','Gucci','Louis Vuitton','Versace','Emporio Armani','Ralph Lauren'];
+      const brands = [...new Set([...luxuryBrands, ...PRODUTOS.filter(p => p.categoria === 'Luxo').map(p => p.marca).filter(Boolean)])].sort((a,b) => a.localeCompare(b, 'pt-BR'));
+      brandFilter.innerHTML = '<option value="">Todas</option>' + brands.map(brand => `<option value="${brand}">${brand}</option>`).join('');
+    } else if (brandFilter) brandFilter.innerHTML = defaultBrandOptions;
   }
   const initial = new URLSearchParams(location.search).get('cat');
   if (initial) document.querySelector('#categoryFilter').value = initial;
