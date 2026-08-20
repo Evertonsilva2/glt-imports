@@ -185,3 +185,13 @@ if (item1119) item1119.img = '/assets/images/luxo/polo-t-1119/3.jpg';
 
 const item1120 = window.PRODUTOS.find(item => item.id === 1120);
 if (item1120) item1120.img = '/assets/images/luxo/polo-t-1120/3.jpg';
+
+// Acessórios — cintos selecionados do lote The belt.
+const ACESSORIOS_CINTOS = [
+  [1161, 'Cinto masculino — 608080165', ['https://photo.yupoo.com/407131796/6e49e7148d/small.jpg','https://photo.yupoo.com/407131796/3616fb7263/small.jpg','https://photo.yupoo.com/407131796/33325feb91/small.jpg','https://photo.yupoo.com/407131796/7e2b0492f8/small.jpg']],
+  [1162, 'Cinto masculino — 608080145', ['https://photo.yupoo.com/407131796/fc1f187f8e/small.jpg','https://photo.yupoo.com/407131796/7592c677f4/small.jpg','https://photo.yupoo.com/407131796/28500ccaa0/small.jpg','https://photo.yupoo.com/407131796/007f113199/small.jpg']],
+  [1163, 'Cinto masculino — 607250140', ['https://photo.yupoo.com/407131796/54ba18d028/small.jpg','https://photo.yupoo.com/407131796/1a381b41d6/small.jpg','https://photo.yupoo.com/407131796/4197680a3a/small.jpg','https://photo.yupoo.com/407131796/49ed757af8/small.jpg']],
+  [1164, 'Cinto masculino — 607250165', ['https://photo.yupoo.com/407131796/4e52f8c6fe/small.jpg','https://photo.yupoo.com/407131796/f8dd4dcccb/small.jpg','https://photo.yupoo.com/407131796/c0364f9601/small.jpg','https://photo.yupoo.com/407131796/01f9fab0af/small.jpg']],
+  [1165, 'Cinto masculino — 607130205', ['https://photo.yupoo.com/407131796/7306b1814d/small.jpg','https://photo.yupoo.com/407131796/bff6d55470/small.jpg','https://photo.yupoo.com/407131796/9d502691c2/small.jpg','https://photo.yupoo.com/407131796/593013061b/small.jpg']]
+];
+for (const [id, nome, galeria] of ACESSORIOS_CINTOS) window.PRODUTOS.push({id,nome,categoria:'Acessórios',marca:'Catálogo GLT',preco:149.99,tipo:'Cinto',tamanhos:['Único'],cores:['Conforme imagens'],descricao:`${nome}, acessório masculino com acabamento premium e disponibilidade sob consulta.`,img:galeria[0],galeria,caracteristicas:['Curadoria GLT Imports','Acessório masculino','Disponibilidade sob consulta']});
