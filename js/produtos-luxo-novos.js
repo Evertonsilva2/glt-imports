@@ -180,3 +180,6 @@ if (item1115) item1115.img = '/assets/images/luxo/polo-t-1115/2.jpg';
 
 const item1119 = window.PRODUTOS.find(item => item.id === 1119);
 if (item1119) item1119.img = '/assets/images/luxo/polo-t-1119/1.jpg';
+
+const item1120 = window.PRODUTOS.find(item => item.id === 1120);
+if (item1120) item1120.img = '/assets/images/luxo/polo-t-1120/1.jpg';
