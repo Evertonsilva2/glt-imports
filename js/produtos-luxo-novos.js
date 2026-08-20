@@ -55,3 +55,9 @@ for (let id = 1122; id <= 1146; id++) {
     img: `/assets/images/luxo/calca-${id}/1.jpg`, galeria: Array.from({length:4}, (_,i)=>`/assets/images/luxo/calca-${id}/${i}.jpg`),
     caracteristicas: ['Curadoria GLT Imports','Modelagem masculina','Disponibilidade sob consulta'] });
 }
+
+const short1142 = window.PRODUTOS.find(item => item.id === 1142);
+if (short1142) {
+  short1142.img = '/assets/images/luxo/calca-1142/3.jpg';
+  short1142.galeria = ['/assets/images/luxo/calca-1142/0.jpg', '/assets/images/luxo/calca-1142/3.jpg'];
+}
