@@ -64,3 +64,9 @@ if (short1142) {
 
 const short1144 = window.PRODUTOS.find(item => item.id === 1144);
 if (short1144) short1144.galeria = ['/assets/images/luxo/calca-1144/0.jpg', '/assets/images/luxo/calca-1144/3.jpg'];
+
+const short1146 = window.PRODUTOS.find(item => item.id === 1146);
+if (short1146) {
+  short1146.img = '/assets/images/luxo/calca-1146/3.jpg';
+  short1146.galeria = ['/assets/images/luxo/calca-1146/0.jpg', '/assets/images/luxo/calca-1146/3.jpg'];
+}
