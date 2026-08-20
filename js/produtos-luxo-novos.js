@@ -52,6 +52,6 @@ for (let id = 1122; id <= 1146; id++) {
   window.PRODUTOS.push({ id, nome: `Short masculino — 608090150 Modelo ${1148 - id}`, categoria: 'Luxo', marca: 'Marca própria', preco: 149.99,
     tipo: 'Short masculino', tamanhos: ['M','G','GG','3XL'], cores: ['Preto'],
     descricao: 'Short masculino 608090150, com modelagem confortável e acabamento casual.',
-    img: `/assets/images/luxo/calca-${id}/0.jpg`, galeria: Array.from({length:4}, (_,i)=>`/assets/images/luxo/calca-${id}/${i}.jpg`),
+    img: `/assets/images/luxo/calca-${id}/1.jpg`, galeria: Array.from({length:4}, (_,i)=>`/assets/images/luxo/calca-${id}/${i}.jpg`),
     caracteristicas: ['Curadoria GLT Imports','Modelagem masculina','Disponibilidade sob consulta'] });
 }
