@@ -215,3 +215,19 @@ const item1159 = window.PRODUTOS.find(item => item.id === 1159);
 if (item1159) item1159.img = '/assets/images/luxo/6080100730/3.jpg';
 const item1160 = window.PRODUTOS.find(item => item.id === 1160);
 if (item1160) { item1160.img = '/assets/images/luxo/608090170/6.jpg'; item1160.galeria = item1160.galeria.filter((_, indice) => ![1, 8].includes(indice)); }
+
+// Modelos adicionais da LaLiga — curadoria Wanfing.
+const LALIGA_EXTRAS = [
+  { id:1205, nome:'Camisa Las Palmas 2026/27 Visitante', clube:'Las Palmas', preco:179.99, album:'249960949', img:'assets/images/camisas/europa/la-liga/las-palmas/249960949/foto-01.png' },
+  { id:1206, nome:'Camisa Las Palmas 2026/27 Titular', clube:'Las Palmas', preco:179.99, album:'249960778', img:'assets/images/camisas/europa/la-liga/las-palmas/249960778/foto-01.png' },
+  { id:1207, nome:'Camisa Osasuna 2026/27 Titular', clube:'Osasuna', preco:179.99, album:'246757029', img:'assets/images/camisas/europa/la-liga/osasuna/246757029/foto-01.png' },
+  { id:1208, nome:'Camisa Real Betis 2026/27 Versão Jogador Titular', clube:'Real Betis', preco:199.99, album:'248714141', img:'assets/images/camisas/europa/la-liga/real-betis/248714141/foto-01.png' },
+  { id:1209, nome:'Camisa Barcelona 2026/27 Versão Jogador Titular', clube:'Barcelona', preco:199.99, album:'244445841', img:'assets/images/camisas/europa/la-liga/barcelona/244445841/foto-01.png' }
+];
+for (const p of LALIGA_EXTRAS) window.PRODUTOS.push({
+  id:p.id, nome:p.nome, categoria:'Camisas', marca:'Catálogo GLT', preco:p.preco,
+  tipo:`La Liga • ${p.clube}`, tamanhos:['P','M','G','GG','XGG'], cores:['Conforme imagens'],
+  descricao:`${p.nome}, selecionada no catálogo internacional da GLT Imports.`,
+  img:p.img, galeria:[p.img], clube:p.clube, liga:'La Liga',
+  caracteristicas:['Camisa oficial de catálogo','Modelo 2026/27','Disponibilidade sob consulta']
+});
