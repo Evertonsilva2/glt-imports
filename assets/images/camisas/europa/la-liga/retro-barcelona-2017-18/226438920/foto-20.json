@@ -1,0 +1,157 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "41066272a2d6af0e",
+      "kind": "image",
+      "name": "logo1@558.png",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/41066272a2d6af0e.png",
+      "url": "https://s.yupoo.com/website/4.33.6/icons/logo1@558.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a92ff6dadd4e58bd",
+      "kind": "image",
+      "name": "logo_3.png",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/a92ff6dadd4e58bd.png",
+      "url": "https://s.yupoo.com/website/4.33.6/imgs/logo_3.png"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "4df46ca1b326bfa5",
+      "kind": "image",
+      "name": "loading_icon.svg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/4df46ca1b326bfa5.svg",
+      "url": "https://s.yupoo.com/website/4.33.6/icons/loading_icon.svg"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "75ad24cba32b7040",
+      "kind": "image",
+      "name": "yupoo-icon-collapse-arrow.svg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/75ad24cba32b7040.svg",
+      "url": "https://s.yupoo.com/website/4.33.6/images/icons/yupoo-icon-collapse-arrow.svg"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6ce021199afc0c2d",
+      "kind": "image",
+      "name": "weibo_icon.svg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/6ce021199afc0c2d.svg",
+      "url": "https://s.yupoo.com/website/4.33.6/imgs/weibo_icon.svg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3bf2ca91cf1cc201",
+      "kind": "image",
+      "name": "policeIcon.png",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/3bf2ca91cf1cc201.png",
+      "url": "https://s.yupoo.com/website/4.33.6/imgs/policeIcon.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "783e6da5f2a39fa0",
+      "kind": "image",
+      "name": "medium.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/783e6da5f2a39fa0.jpg",
+      "url": "https://photo.yupoo.com/wanfing/aa49c38d/medium.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "f0f930733a31bd53",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/f0f930733a31bd53.jpg",
+      "url": "https://photo.yupoo.com/wanfing/32718565/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "9dd6955cfafc6cc8",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/9dd6955cfafc6cc8.jpg",
+      "url": "https://photo.yupoo.com/wanfing/c911a034/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "b18dce39188a084f",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/b18dce39188a084f.jpg",
+      "url": "https://photo.yupoo.com/wanfing/c52d4ad4/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "9fa7afd9fced6b89",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/9fa7afd9fced6b89.jpg",
+      "url": "https://photo.yupoo.com/wanfing/ef6b94bf/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "66d49fc39ac7c030",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/66d49fc39ac7c030.jpg",
+      "url": "https://photo.yupoo.com/wanfing/34f1a50b/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "7fe430dd5ab9caad",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/7fe430dd5ab9caad.jpg",
+      "url": "https://photo.yupoo.com/wanfing/2b782c81/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "5269518d44e6a154",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/5269518d44e6a154.jpg",
+      "url": "https://photo.yupoo.com/wanfing/3e4309f8/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "f0949af916406576",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/f0949af916406576.jpg",
+      "url": "https://photo.yupoo.com/wanfing/fb062cf9/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "24a19d56c1cf0c79",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/24a19d56c1cf0c79.jpg",
+      "url": "https://photo.yupoo.com/wanfing/aa49c38d/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "6486db22abf56a7d",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/6486db22abf56a7d.jpg",
+      "url": "https://photo.yupoo.com/wanfing/9b6d99ba/small.jpg"
+    },
+    {
+      "contentType": "image/gif",
+      "id": "183277c169368cd4",
+      "kind": "image",
+      "name": "hm.gif",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/183277c169368cd4.gif",
+      "url": "https://hm.baidu.com/hm.gif?hca=5C74075D4443C928&cc=1&ck=1&cl=24-bit&ds=1600x900&vl=732&ep=3322%2C3318&et=3&ja=0&ln=pt-br&lo=0&lt=1787342445&rnd=144973762&si=28019b8719a5fff5b26dfb4079a63dab&v=1.3.2&lv=2&sn=8673&r=0&ww=577&u=https%3A%2F%2Fwanfing.x.yupoo.com%2Falbums%2F222656567%3Fuid%3D1%26isSubCate%3Dfalse%26referrercate%3D3530506"
+    },
+    {
+      "contentType": "image/gif",
+      "id": "a103d23b8386ba7c",
+      "kind": "image",
+      "name": "hm.gif",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/aa52959f-6765-42ba-a8a5-95ad3b6697d8/a103d23b8386ba7c.gif",
+      "url": "https://hm.baidu.com/hm.gif?hca=5C74075D4443C928&cc=1&ck=1&cl=24-bit&ds=1600x900&vl=732&et=0&ja=0&ln=pt-br&lo=0&lt=1787342445&rnd=1398932166&si=28019b8719a5fff5b26dfb4079a63dab&v=1.3.2&lv=2&sn=8677&r=0&ww=577&u=https%3A%2F%2Fwanfing.x.yupoo.com%2Falbums%2F226438920%3Fuid%3D1%26isSubCate%3Dfalse%26referrercate%3D3530506&tt=Retro%20Barcelona%202017%2F18%20Home%20Jersey%20S-XXL%20%7C%20%C3%A1lbum%20%7C%20Wind%20Sports%20I%20Wanfeng%20%7C%20Supplier%20Product%20Catalog"
+    }
+  ],
+  "failures": []
+}

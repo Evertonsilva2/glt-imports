@@ -240,6 +240,36 @@ for (const p of window.PRODUTOS) {
   }
 }
 
+const LALIGA_MODELOS_EXTRAS = [
+  [1211,'Camisa Barcelona Retrô 2016/17 Titular','Barcelona','retro-barcelona-2016-17','96720635',199.99,11],
+  [1212,'Camisa Barcelona 2024/25 Titular','Barcelona','barcelona-2024-25-home','164988153',179.99,14],
+  [1213,'Camisa Barcelona Retrô 2015/16 Titular Manga Longa','Barcelona','retro-barcelona-2015-16','222657088',199.99,12],
+  [1214,'Camisa Barcelona Retrô 2010/11 Titular Manga Longa','Barcelona','retro-barcelona-2010-11','222656567',199.99,12],
+  [1215,'Camisa Barcelona Retrô 2017/18 Titular','Barcelona','retro-barcelona-2017-18','226438920',199.99,11],
+  [1216,'Camisa Real Madrid 2025/26 Versão Jogador Titular','Real Madrid','real-madrid-2025-26-player','217726144',199.99,11],
+  [1217,'Camisa Barcelona 2024/25 Visitante','Barcelona','barcelona-2024-25-away','165646726',179.99,12],
+  [1218,'Camisa Real Madrid Retrô 2003/04 Titular','Real Madrid','retro-real-madrid-03-04','132634506',199.99,14],
+  [1219,'Camisa Real Madrid 2022/23 Titular','Real Madrid','real-madrid-22-23-home','113743786',179.99,10],
+  [1220,'Camisa Real Madrid 2017/18 Visitante','Real Madrid','real-madrid-17-18-away','106777150',199.99,9]
+];
+const LALIGA_GALERIAS = {
++  96720635: ['foto-01.png','foto-02.png','foto-03.jpg','foto-04.jpg','foto-05.png','foto-06.png','foto-07.svg','foto-08.jpg','foto-09.jpg','foto-10.svg','foto-11.jpg','foto-12.svg','foto-13.gif','foto-14.jpg','foto-15.png','foto-16.jpg','foto-17.jpg','foto-18.gif','foto-19.jpg'],
+  164988153: ['foto-01.png','foto-02.jpg','foto-03.png','foto-04.jpg','foto-05.png','foto-06.jpg','foto-07.jpg','foto-08.svg','foto-09.jpg','foto-10.jpg','foto-11.jpg','foto-12.svg','foto-13.svg','foto-14.jpg','foto-15.jpg','foto-16.jpg','foto-17.png','foto-18.png','foto-19.gif','foto-20.jpg','foto-21.gif','foto-22.jpg'],
+  222657088: ['foto-01.jpg','foto-02.jpg','foto-03.jpg','foto-04.jpg','foto-05.jpg','foto-06.jpg','foto-07.png','foto-08.png','foto-09.svg','foto-10.gif','foto-11.jpg','foto-12.jpg','foto-13.svg','foto-14.jpg','foto-15.jpg','foto-16.jpg','foto-17.png','foto-18.gif','foto-19.jpg'],
+  222656567: ['foto-01.jpg','foto-02.jpg','foto-03.jpg','foto-04.png','foto-05.jpg','foto-06.png','foto-07.svg','foto-08.jpg','foto-09.svg','foto-10.svg','foto-11.gif','foto-12.jpg','foto-13.jpg','foto-14.gif','foto-15.jpg','foto-16.png','foto-17.jpg','foto-18.jpg','foto-19.jpg','foto-20.jpg'],
+  226438920: ['foto-01.gif','foto-02.jpg','foto-03.png','foto-04.png','foto-05.svg','foto-06.jpg','foto-07.jpg','foto-08.jpg','foto-09.svg','foto-10.svg','foto-11.jpg','foto-12.jpg','foto-13.jpg','foto-14.jpg','foto-15.gif','foto-16.png','foto-17.jpg','foto-18.jpg','foto-19.jpg'],
+  217726144: ['foto-01.jpg','foto-02.jpg','foto-03.png','foto-04.png','foto-05.svg','foto-06.svg','foto-07.jpg','foto-08.jpg','foto-09.svg','foto-10.jpg','foto-11.jpg','foto-12.gif','foto-13.png','foto-14.jpg','foto-15.gif','foto-16.jpg','foto-17.jpg','foto-18.jpg','foto-19.jpg'],
+  165646726: ['foto-01.jpg','foto-02.png','foto-03.png','foto-04.svg','foto-05.jpg','foto-06.jpg','foto-07.svg','foto-08.svg','foto-09.jpg','foto-10.jpg','foto-11.gif','foto-12.png','foto-13.jpg','foto-14.jpg','foto-15.jpg','foto-16.jpg','foto-17.jpg','foto-18.gif','foto-19.jpg','foto-20.jpg'],
+  132634506: ['foto-01.jpg','foto-02.jpg','foto-03.jpg','foto-04.gif','foto-05.png','foto-06.png','foto-07.gif','foto-08.svg','foto-09.svg','foto-10.svg','foto-11.jpg','foto-12.jpg','foto-13.png','foto-14.jpg','foto-15.jpg','foto-16.jpg','foto-17.jpg','foto-18.jpg','foto-19.jpg','foto-20.jpg','foto-21.jpg','foto-22.jpg'],
+  113743786: ['foto-01.jpg','foto-02.png','foto-03.png','foto-04.jpg','foto-05.svg','foto-06.jpg','foto-07.svg','foto-08.svg','foto-09.jpg','foto-10.jpg','foto-11.jpg','foto-12.jpg','foto-13.png','foto-14.jpg','foto-15.jpg','foto-16.jpg'],
+  106777150: ['foto-01.jpg','foto-02.jpg','foto-03.jpeg','foto-04.gif','foto-05.jpg','foto-06.png','foto-07.png','foto-08.svg','foto-09.jpg','foto-10.svg','foto-11.svg','foto-12.gif','foto-13.jpeg','foto-14.png','foto-15.jpeg','foto-16.jpg','foto-17.jpg'],
+};
+for (const [id,nome,clube,pasta,album,preco,count] of LALIGA_MODELOS_EXTRAS) {
+  const base = `assets/images/camisas/europa/la-liga/${pasta}/${album}`;
+  const galeria = (LALIGA_GALERIAS[id] || []).map(nomeArquivo => `${base}/${nomeArquivo}`);
+  window.PRODUTOS.push({id,nome,categoria:'Camisas',marca:'Catálogo GLT',preco,tipo:`La Liga • ${clube}`,clube,liga:'La Liga',tamanhos:['P','M','G','GG','XGG'],cores:['Conforme imagens'],descricao:`${nome}, selecionada no catálogo internacional da GLT Imports. Produto disponível sob consulta.`,img:galeria[0],galeria,caracteristicas:['Modelo de catálogo','Camisa de futebol','Disponibilidade sob consulta']});
+}
+
 window.PRODUTOS.push({
   id:1210,
   nome:'Camisa Santos 2025/26 III Azul',

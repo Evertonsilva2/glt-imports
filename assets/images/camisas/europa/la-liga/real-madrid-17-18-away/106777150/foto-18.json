@@ -1,0 +1,141 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "41066272a2d6af0e",
+      "kind": "image",
+      "name": "logo1@558.png",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/41066272a2d6af0e.png",
+      "url": "https://s.yupoo.com/website/4.33.6/icons/logo1@558.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a92ff6dadd4e58bd",
+      "kind": "image",
+      "name": "logo_3.png",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/a92ff6dadd4e58bd.png",
+      "url": "https://s.yupoo.com/website/4.33.6/imgs/logo_3.png"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "4df46ca1b326bfa5",
+      "kind": "image",
+      "name": "loading_icon.svg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/4df46ca1b326bfa5.svg",
+      "url": "https://s.yupoo.com/website/4.33.6/icons/loading_icon.svg"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "75ad24cba32b7040",
+      "kind": "image",
+      "name": "yupoo-icon-collapse-arrow.svg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/75ad24cba32b7040.svg",
+      "url": "https://s.yupoo.com/website/4.33.6/images/icons/yupoo-icon-collapse-arrow.svg"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6ce021199afc0c2d",
+      "kind": "image",
+      "name": "weibo_icon.svg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/6ce021199afc0c2d.svg",
+      "url": "https://s.yupoo.com/website/4.33.6/imgs/weibo_icon.svg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3bf2ca91cf1cc201",
+      "kind": "image",
+      "name": "policeIcon.png",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/3bf2ca91cf1cc201.png",
+      "url": "https://s.yupoo.com/website/4.33.6/imgs/policeIcon.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "0efcc6efdb1d6593",
+      "kind": "image",
+      "name": "small.jpeg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/0efcc6efdb1d6593.jpeg",
+      "url": "https://photo.yupoo.com/wanfing/a0a54d06/small.jpeg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "23c25d2708e6cde8",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/23c25d2708e6cde8.jpg",
+      "url": "https://photo.yupoo.com/wanfing/05ccad69/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "d77bff7deabc9e89",
+      "kind": "image",
+      "name": "medium.jpeg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/d77bff7deabc9e89.jpeg",
+      "url": "https://photo.yupoo.com/wanfing/105db493/medium.jpeg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "ed45731f1c13e3ef",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/ed45731f1c13e3ef.jpg",
+      "url": "https://photo.yupoo.com/wanfing/2e0ec1e6/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "5620614f646f2430",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/5620614f646f2430.jpg",
+      "url": "https://photo.yupoo.com/wanfing/d9943667/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "01660849e320d2c0",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/01660849e320d2c0.jpg",
+      "url": "https://photo.yupoo.com/wanfing/3786ab97/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "e1114050d7e31cad",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/e1114050d7e31cad.jpg",
+      "url": "https://photo.yupoo.com/wanfing/b03df70a/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "01fa5be2c8d1560c",
+      "kind": "image",
+      "name": "small.jpg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/01fa5be2c8d1560c.jpg",
+      "url": "https://photo.yupoo.com/wanfing/9e62316c/small.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "99654ff98e5d2e39",
+      "kind": "image",
+      "name": "small.jpeg",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/99654ff98e5d2e39.jpeg",
+      "url": "https://photo.yupoo.com/wanfing/105db493/small.jpeg"
+    },
+    {
+      "contentType": "image/gif",
+      "id": "98ebb89fdd9a2c66",
+      "kind": "image",
+      "name": "hm.gif",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/98ebb89fdd9a2c66.gif",
+      "url": "https://hm.baidu.com/hm.gif?hca=5C74075D4443C928&cc=1&ck=1&cl=24-bit&ds=1600x900&vl=732&et=0&ja=0&ln=pt-br&lo=0&lt=1787342445&rnd=1034495449&si=28019b8719a5fff5b26dfb4079a63dab&v=1.3.2&lv=2&sn=8705&r=0&ww=577&u=https%3A%2F%2Fwanfing.x.yupoo.com%2Falbums%2F106777150%3Fuid%3D1%26isSubCate%3Dfalse%26referrercate%3D3530506&tt=Real%20Madrid%2017%2F18%20second%20away%20S-XXL%20%7C%20%C3%A1lbum%20%7C%20Wind%20Sports%20I%20Wanfeng%20%7C%20Supplier%20Product%20Catalog"
+    },
+    {
+      "contentType": "image/gif",
+      "id": "15f0352f947650f2",
+      "kind": "image",
+      "name": "hm.gif",
+      "path": "C:\\Users\\NICOLE~1\\AppData\\Local\\Temp/browser-use/assets/f183853e-34c6-4bb2-b1fa-45ce0d501ce2/15f0352f947650f2.gif",
+      "url": "https://hm.baidu.com/hm.gif?hca=5C74075D4443C928&cc=1&ck=1&cl=24-bit&ds=1600x900&vl=732&ep=5940%2C5936&et=3&ja=0&ln=pt-br&lo=0&lt=1787342445&rnd=809466788&si=28019b8719a5fff5b26dfb4079a63dab&v=1.3.2&lv=2&sn=8699&r=0&ww=577&u=https%3A%2F%2Fwanfing.x.yupoo.com%2Falbums%2F113743786%3Fuid%3D1%26isSubCate%3Dfalse%26referrercate%3D3530506"
+    }
+  ],
+  "failures": []
+}
