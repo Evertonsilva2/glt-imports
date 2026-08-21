@@ -5,3 +5,9 @@
 .footer a,.footer p{font-size:13px;line-height:1.9;margin:10px 0}
 .footer-statement{font-size:clamp(65px,11vw,180px);margin-top:125px;margin-bottom:55px}
 .copyright{padding-top:24px;font-size:10px}
+@media(max-width:720px){
+  .actions{align-items:center;height:48px}
+  .actions .icon-btn{display:inline-flex;align-items:center;justify-content:center;padding:0;line-height:1;vertical-align:middle}
+  .actions .search-action{transform:none}
+  .actions .search-action .search-hint{top:35px}
+}
