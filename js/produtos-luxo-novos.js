@@ -253,7 +253,7 @@ const LALIGA_MODELOS_EXTRAS = [
   [1220,'Camisa Real Madrid 2017/18 Visitante','Real Madrid','real-madrid-17-18-away','106777150',199.99,9]
 ];
 const LALIGA_GALERIAS = {
-+  96720635: ['foto-01.png','foto-02.png','foto-03.jpg','foto-04.jpg','foto-05.png','foto-06.png','foto-07.svg','foto-08.jpg','foto-09.jpg','foto-10.svg','foto-11.jpg','foto-12.svg','foto-13.gif','foto-14.jpg','foto-15.png','foto-16.jpg','foto-17.jpg','foto-18.gif','foto-19.jpg'],
+  96720635: ['foto-01.png','foto-02.png','foto-03.jpg','foto-04.jpg','foto-05.png','foto-06.png','foto-07.svg','foto-08.jpg','foto-09.jpg','foto-10.svg','foto-11.jpg','foto-12.svg','foto-13.gif','foto-14.jpg','foto-15.png','foto-16.jpg','foto-17.jpg','foto-18.gif','foto-19.jpg'],
   164988153: ['foto-01.png','foto-02.jpg','foto-03.png','foto-04.jpg','foto-05.png','foto-06.jpg','foto-07.jpg','foto-08.svg','foto-09.jpg','foto-10.jpg','foto-11.jpg','foto-12.svg','foto-13.svg','foto-14.jpg','foto-15.jpg','foto-16.jpg','foto-17.png','foto-18.png','foto-19.gif','foto-20.jpg','foto-21.gif','foto-22.jpg'],
   222657088: ['foto-01.jpg','foto-02.jpg','foto-03.jpg','foto-04.jpg','foto-05.jpg','foto-06.jpg','foto-07.png','foto-08.png','foto-09.svg','foto-10.gif','foto-11.jpg','foto-12.jpg','foto-13.svg','foto-14.jpg','foto-15.jpg','foto-16.jpg','foto-17.png','foto-18.gif','foto-19.jpg'],
   222656567: ['foto-01.jpg','foto-02.jpg','foto-03.jpg','foto-04.png','foto-05.jpg','foto-06.png','foto-07.svg','foto-08.jpg','foto-09.svg','foto-10.svg','foto-11.gif','foto-12.jpg','foto-13.jpg','foto-14.gif','foto-15.jpg','foto-16.png','foto-17.jpg','foto-18.jpg','foto-19.jpg','foto-20.jpg'],
