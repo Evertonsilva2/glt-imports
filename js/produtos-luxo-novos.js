@@ -291,6 +291,15 @@ for (const [id,nome,album,pasta,preco] of PALMEIRAS_EXTRAS) {
     p.img = p.galeria[0];
   }
 }
+{
+  const p = window.PRODUTOS.find(x => x.id === 1223);
+  if (p && p.galeria.length >= 14) {
+    const base = p.galeria[0].replace(/foto-\d+\.[^/]+$/, '');
+    const nomes = ['foto-01.png','foto-03.png','foto-10.png','foto-11.png','foto-13.png','foto-14.png'];
+    p.galeria = nomes.map(n => `${base}${n}`);
+    p.img = p.galeria[0];
+  }
+}
 
 // Todas as camisas identificadas como versão jogador têm preço premium único.
 for (const p of window.PRODUTOS) {
