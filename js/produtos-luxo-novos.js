@@ -231,3 +231,11 @@ for (const p of LALIGA_EXTRAS) window.PRODUTOS.push({
   img:p.img, galeria:[p.img], clube:p.clube, liga:'La Liga',
   caracteristicas:['Camisa oficial de catálogo','Modelo 2026/27','Disponibilidade sob consulta']
 });
+
+// Todas as camisas identificadas como versão jogador têm preço premium único.
+for (const p of window.PRODUTOS) {
+  const nome = String(p.nome || '').toLowerCase();
+  if (p.categoria === 'Camisas' && (nome.includes('versão jogador') || nome.includes('player version'))) {
+    p.preco = 199.99;
+  }
+}
