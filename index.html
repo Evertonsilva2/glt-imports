@@ -137,7 +137,6 @@
         ['Camisas', 'Ícones que carregam histórias.', 'https://imgcentauro-a.akamaihd.net/1300x1300/M17JVU02A1.jpg'],
         ['Tênis', 'Do estádio para as ruas.', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85'],
         ['Luxo', 'Moda masculina de alto padrão.', 'assets/images/luxo/1061-1062-local/1062-3.jpg'],
-        ['Joias', 'Relógios e acessórios masculinos.', 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85'],
         ['Acessórios', 'Bonés e óculos para completar o visual.', 'https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=1000&q=85']
       ];
       categoryGrid.innerHTML = cats.map(c => `<article class="category reveal"><img src="${c[2]}" alt="${c[0]}"><div class="cat-copy"><h3>${c[0]}</h3><p>${c[1]}</p><a href="produtos.html?cat=${c[0]}">EXPLORAR →</a></div></article>`).join('');
