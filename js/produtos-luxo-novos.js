@@ -261,7 +261,7 @@ const PALMEIRAS_FOTOS_VALIDAS = {
 };
 for (const [id,nome,album,pasta,preco] of PALMEIRAS_EXTRAS) {
   const base = `assets/images/camisas/brasileirao/palmeiras/${pasta}/${album}`;
-  const galeria = (PALMEIRAS_GALERIAS[Number(album)] || []).filter(f => (PALMEIRAS_FOTOS_VALIDAS[Number(album)] || []).includes(f)).map(f => `${base}/${f}`);
+  const galeria = (PALMEIRAS_GALERIAS[Number(album)] || []).map(f => `${base}/${f}`);
   window.PRODUTOS.push({id,nome,categoria:'Camisas',marca:'Catálogo GLT',preco,tipo:'Brasileirão • Palmeiras',clube:'Palmeiras',liga:'Brasileirão',tamanhos:['P','M','G','GG','XGG'],cores:['Verde','Conforme imagens'],descricao:`${nome}, modelo oficial de catálogo do Palmeiras. Produto disponível sob consulta.`,img:galeria[0],galeria,caracteristicas:['Camisa de futebol','Modelo de catálogo','Disponibilidade sob consulta']});
 }
 
