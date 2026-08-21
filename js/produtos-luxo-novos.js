@@ -250,9 +250,18 @@ const PALMEIRAS_GALERIAS = {
   154859790:['foto-01.png','foto-02.gif','foto-03.png','foto-04.png','foto-05.svg','foto-06.svg','foto-07.svg','foto-08.png','foto-09.png','foto-10.png','foto-11.png','foto-12.png','foto-13.png','foto-14.gif','foto-15.png'],
   110590379:['foto-01.jpg','foto-02.jpg','foto-03.png','foto-04.png','foto-05.svg','foto-06.png','foto-07.svg','foto-08.svg','foto-09.jpg','foto-10.jpg','foto-11.jpeg','foto-12.jpg','foto-13.gif','foto-14.gif','foto-15.png','foto-16.jpg','foto-17.jpg','foto-18.jpg','foto-19.jpg','foto-20.jpg','foto-21.jpg','foto-22.jpeg']
 };
+const PALMEIRAS_FOTOS_VALIDAS = {
+  223969871:['foto-01.jpg','foto-02.jpg','foto-03.jpg','foto-04.jpg','foto-11.jpg','foto-12.jpg','foto-14.jpg','foto-15.jpg','foto-16.jpg'],
+  226558767:['foto-01.jpg','foto-03.jpg','foto-08.jpg','foto-11.jpg','foto-12.jpg','foto-13.jpg','foto-15.jpg','foto-16.jpg','foto-17.jpg','foto-18.jpg','foto-19.jpg','foto-20.jpg'],
+  187339584:['foto-01.png','foto-03.png','foto-10.png','foto-11.png','foto-13.png','foto-14.png'],
+  156518187:['foto-01.jpg','foto-02.jpg','foto-03.jpg','foto-05.jpg','foto-07.jpg','foto-08.jpg','foto-10.jpg','foto-14.jpg','foto-15.jpg','foto-16.jpg','foto-18.jpg','foto-19.jpg','foto-21.jpg','foto-22.jpg','foto-23.jpg','foto-24.jpg','foto-25.jpg'],
+  154859499:['foto-01.png','foto-02.png','foto-06.png','foto-08.png','foto-12.png','foto-14.png'],
+  154859790:['foto-01.png','foto-08.png','foto-09.png','foto-10.png','foto-11.png','foto-13.png','foto-15.png'],
+  110590379:['foto-01.jpg','foto-02.jpg','foto-09.jpg','foto-10.jpg','foto-11.jpeg','foto-12.jpg','foto-16.jpg','foto-17.jpg','foto-18.jpg','foto-19.jpg','foto-20.jpg','foto-21.jpg','foto-22.jpeg']
+};
 for (const [id,nome,album,pasta,preco] of PALMEIRAS_EXTRAS) {
   const base = `assets/images/camisas/brasileirao/palmeiras/${pasta}/${album}`;
-  const galeria = (PALMEIRAS_GALERIAS[Number(album)] || []).map(f => `${base}/${f}`);
+  const galeria = (PALMEIRAS_GALERIAS[Number(album)] || []).filter(f => (PALMEIRAS_FOTOS_VALIDAS[Number(album)] || []).includes(f)).map(f => `${base}/${f}`);
   window.PRODUTOS.push({id,nome,categoria:'Camisas',marca:'Catálogo GLT',preco,tipo:'Brasileirão • Palmeiras',clube:'Palmeiras',liga:'Brasileirão',tamanhos:['P','M','G','GG','XGG'],cores:['Verde','Conforme imagens'],descricao:`${nome}, modelo oficial de catálogo do Palmeiras. Produto disponível sob consulta.`,img:galeria[0],galeria,caracteristicas:['Camisa de futebol','Modelo de catálogo','Disponibilidade sob consulta']});
 }
 
