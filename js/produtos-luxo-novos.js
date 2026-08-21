@@ -266,7 +266,7 @@ const LALIGA_GALERIAS = {
 };
 for (const [id,nome,clube,pasta,album,preco,count] of LALIGA_MODELOS_EXTRAS) {
   const base = `assets/images/camisas/europa/la-liga/${pasta}/${album}`;
-  const galeria = (LALIGA_GALERIAS[id] || []).map(nomeArquivo => `${base}/${nomeArquivo}`);
+  const galeria = [`${base}/capa.jpg`, ...(LALIGA_GALERIAS[id] || []).map(nomeArquivo => `${base}/${nomeArquivo}`)];
   window.PRODUTOS.push({id,nome,categoria:'Camisas',marca:'Catálogo GLT',preco,tipo:`La Liga • ${clube}`,clube,liga:'La Liga',tamanhos:['P','M','G','GG','XGG'],cores:['Conforme imagens'],descricao:`${nome}, selecionada no catálogo internacional da GLT Imports. Produto disponível sob consulta.`,img:galeria[0],galeria,caracteristicas:['Modelo de catálogo','Camisa de futebol','Disponibilidade sob consulta']});
 }
 
