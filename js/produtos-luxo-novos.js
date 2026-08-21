@@ -232,6 +232,30 @@ for (const p of LALIGA_EXTRAS) window.PRODUTOS.push({
   caracteristicas:['Camisa oficial de catálogo','Modelo 2026/27','Disponibilidade sob consulta']
 });
 
+const PALMEIRAS_EXTRAS = [
+  [1221,'Camisa Palmeiras 2026/27 Titular','223969871','palmeiras-2026-27-home',179.99],
+  [1222,'Camisa Palmeiras 2026/27 Versão Jogador','226558767','palmeiras-2026-27-player',199.99],
+  [1223,'Camisa Palmeiras 2025/26 Titular com Patrocinadores','187339584','palmeiras-2025-26-home-sponsors',179.99],
+  [1224,'Camisa Palmeiras 2024/25 Versão Jogador Titular','156518187','palmeiras-2024-25-player',199.99],
+  [1225,'Camisa Palmeiras 2024/25 Titular com Patrocinadores','154859499','palmeiras-2024-25-home-sponsors',179.99],
+  [1226,'Camisa Palmeiras 2024/25 Visitante com Patrocinadores','154859790','palmeiras-2024-25-away-sponsors',179.99],
+  [1227,'Camisa Palmeiras 2022/23 Titular com Patrocinadores','110590379','palmeiras-22-23-home-sponsors',179.99]
+];
+const PALMEIRAS_GALERIAS = {
+  223969871:['foto-01.jpg','foto-02.jpg','foto-03.jpg','foto-04.jpg','foto-05.png','foto-06.png','foto-07.svg','foto-08.svg','foto-09.gif','foto-10.svg','foto-11.jpg','foto-12.jpg','foto-13.png','foto-14.jpg','foto-15.jpg','foto-16.jpg','foto-17.gif'],
+  226558767:['foto-01.jpg','foto-02.png','foto-03.jpg','foto-04.png','foto-05.svg','foto-06.gif','foto-07.gif','foto-08.jpg','foto-09.svg','foto-10.svg','foto-11.jpg','foto-12.jpg','foto-13.jpg','foto-14.png','foto-15.jpg','foto-16.jpg','foto-17.jpg','foto-18.jpg','foto-19.jpg','foto-20.jpg'],
+  187339584:['foto-01.png','foto-02.gif','foto-03.png','foto-04.png','foto-05.png','foto-06.svg','foto-07.svg','foto-08.gif','foto-09.svg','foto-10.png','foto-11.png','foto-12.png','foto-13.png','foto-14.png'],
+  156518187:['foto-01.jpg','foto-02.jpg','foto-03.jpg','foto-04.gif','foto-05.jpg','foto-06.png','foto-07.jpg','foto-08.jpg','foto-09.png','foto-10.jpg','foto-11.svg','foto-12.svg','foto-13.svg','foto-14.jpg','foto-15.jpg','foto-16.jpg','foto-17.png','foto-18.jpg','foto-19.jpg','foto-20.gif','foto-21.jpg','foto-22.jpg','foto-23.jpg','foto-24.jpg','foto-25.jpg'],
+  154859499:['foto-01.png','foto-02.png','foto-03.gif','foto-04.png','foto-05.png','foto-06.png','foto-07.svg','foto-08.png','foto-09.svg','foto-10.svg','foto-11.gif','foto-12.png','foto-13.png','foto-14.png'],
+  154859790:['foto-01.png','foto-02.gif','foto-03.png','foto-04.png','foto-05.svg','foto-06.svg','foto-07.svg','foto-08.png','foto-09.png','foto-10.png','foto-11.png','foto-12.png','foto-13.png','foto-14.gif','foto-15.png'],
+  110590379:['foto-01.jpg','foto-02.jpg','foto-03.png','foto-04.png','foto-05.svg','foto-06.png','foto-07.svg','foto-08.svg','foto-09.jpg','foto-10.jpg','foto-11.jpeg','foto-12.jpg','foto-13.gif','foto-14.gif','foto-15.png','foto-16.jpg','foto-17.jpg','foto-18.jpg','foto-19.jpg','foto-20.jpg','foto-21.jpg','foto-22.jpeg']
+};
+for (const [id,nome,album,pasta,preco] of PALMEIRAS_EXTRAS) {
+  const base = `assets/images/camisas/brasileirao/palmeiras/${pasta}/${album}`;
+  const galeria = (PALMEIRAS_GALERIAS[Number(album)] || []).map(f => `${base}/${f}`);
+  window.PRODUTOS.push({id,nome,categoria:'Camisas',marca:'Catálogo GLT',preco,tipo:'Brasileirão • Palmeiras',clube:'Palmeiras',liga:'Brasileirão',tamanhos:['P','M','G','GG','XGG'],cores:['Verde','Conforme imagens'],descricao:`${nome}, modelo oficial de catálogo do Palmeiras. Produto disponível sob consulta.`,img:galeria[0],galeria,caracteristicas:['Camisa de futebol','Modelo de catálogo','Disponibilidade sob consulta']});
+}
+
 // Todas as camisas identificadas como versão jogador têm preço premium único.
 for (const p of window.PRODUTOS) {
   const nome = String(p.nome || '').toLowerCase();
