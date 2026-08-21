@@ -264,6 +264,15 @@ for (const [id,nome,album,pasta,preco] of PALMEIRAS_EXTRAS) {
   const galeria = (PALMEIRAS_GALERIAS[Number(album)] || []).map(f => `${base}/${f}`);
   window.PRODUTOS.push({id,nome,categoria:'Camisas',marca:'Catálogo GLT',preco,tipo:'Brasileirão • Palmeiras',clube:'Palmeiras',liga:'Brasileirão',tamanhos:['P','M','G','GG','XGG'],cores:['Verde','Conforme imagens'],descricao:`${nome}, modelo oficial de catálogo do Palmeiras. Produto disponível sob consulta.`,img:galeria[0],galeria,caracteristicas:['Camisa de futebol','Modelo de catálogo','Disponibilidade sob consulta']});
 }
+{
+  const p = window.PRODUTOS.find(x => x.id === 1226);
+  if (p && p.galeria.length >= 15) {
+    const base = p.galeria[0].replace(/foto-\d+\.[^/]+$/, '');
+    const nomes = ['foto-13.png','foto-01.png','foto-08.png','foto-09.png','foto-10.png','foto-11.png','foto-15.png'];
+    p.galeria = nomes.map(n => `${base}${n}`);
+    p.img = p.galeria[0];
+  }
+}
 
 // Todas as camisas identificadas como versão jogador têm preço premium único.
 for (const p of window.PRODUTOS) {
