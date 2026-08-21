@@ -247,7 +247,7 @@ window.PRODUTOS.push({
   tipo:'Brasileirão • Santos', clube:'Santos', liga:'Brasileirão',
   tamanhos:['P','M','G','GG','XGG'], cores:['Azul'],
   descricao:'Camisa azul do Santos versão III da temporada 2025/26, com acabamento esportivo e detalhes do clube. Produto disponível sob consulta.',
-  img:'assets/images/camisas/brasileirao/santos/208495367/foto-01.jpg',
+  img:'assets/images/camisas/brasileirao/santos/208495367/foto-11.jpg',
   galeria:Array.from({length:11},(_,i)=>`assets/images/camisas/brasileirao/santos/208495367/foto-${String(i+1).padStart(2,'0')}.jpg`),
   caracteristicas:['Modelo 2025/26','Camisa III azul','Disponibilidade sob consulta']
 });
