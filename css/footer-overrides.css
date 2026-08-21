@@ -1,0 +1,7 @@
+/* Ajuste de escala do rodapé GLT Imports. */
+.footer{padding-top:110px!important;padding-bottom:38px!important;min-height:390px}
+.footer-top{gap:60px}
+.footer h4{font-size:11px}
+.footer a,.footer p{font-size:13px;line-height:1.9;margin:10px 0}
+.footer-statement{font-size:clamp(65px,11vw,180px);margin-top:125px;margin-bottom:55px}
+.copyright{padding-top:24px;font-size:10px}
