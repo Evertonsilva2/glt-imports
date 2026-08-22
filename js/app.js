@@ -1,6 +1,6 @@
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const money=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-const displayPrice=p=>['Luxo','Acessórios'].includes(p?.categoria)?'Valor sob consulta':money(p?.preco||0);
+const displayPrice=p=>['Luxo','Acessórios','Tênis','Chuteiras'].includes(p?.categoria)?'Valor sob consulta':money(p?.preco||0);
 // Itens removidos do catálogo a pedido do proprietário.
 window.PRODUTOS = (window.PRODUTOS || []).filter(p => p.categoria !== 'Joias' && ![22,23,24,25,26,31,32,33,34,35,329,1204,1218,1161,1162,1163,1164,1165,1178,1179,1180,1181,1182,1183,1184,1185,1188,1190,1191,1193,1199,1200,1201,1122,1123,1124,1125,1126,1127,1128,1129,1130,1131,1135,1136,1137,1138,1139,1140,1141,1145,1155,1157,1158].includes(Number(p.id)));
 const state={favorites:JSON.parse(localStorage.getItem('glt-favorites')||'[]')};
